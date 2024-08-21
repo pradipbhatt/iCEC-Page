@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logo from "../../public/logo.png"
 import { FaCaretDown, FaCaretUp } from 'react-icons/fa';
 
 const Navbar = () => {
@@ -20,7 +21,7 @@ const Navbar = () => {
             height="100"
             decoding="async"
             className="w-8 h-8 sm:w-10 sm:h-10 md:w-14 md:h-14 object-cover"
-            src="https://icec.vercel.app/assets/logo-icec-COfn0a5B.png"
+            src={logo}
           />
         </a>
       </div>
