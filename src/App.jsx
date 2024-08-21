@@ -22,7 +22,6 @@ const App = () => {
         <Route path="/publications" element={<Publications />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/executive-committee" element={<Executives />} />
-        {/* <Route path="/advisory-board" element={<Advisory.jsx />} /> */}
         <Route path="/advisory-board" element={<Advisory />} />
         <Route path="/soe-express" element={<Soeexpress />} />
         <Route path="/apply" element={<Apply />} />
