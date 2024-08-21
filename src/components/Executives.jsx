@@ -3,6 +3,7 @@ import Footer from './Footer';
 import dikshya from "../../public/dikshya.jpg"
 import dileep from "../../public/dileep.jpg"
 import ram from "../../public/ram.jpg"
+import logo from "../../public/logo.png"
 
 // Sample JSON data (you should replace this with actual data from your JSON file)
 const members = [
@@ -145,7 +146,7 @@ const Executives = () => {
               height="40"
               decoding="async"
               className="absolute left-0 top-0"
-              src="https://icec.vercel.app/assets/logo-icec-COfn0a5B.png"
+              src={logo}
             />
             <img
               alt={member.name}
