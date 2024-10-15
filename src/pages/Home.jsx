@@ -16,11 +16,12 @@ const Home = () => {
     // Set a timer to simulate loading
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // 2 seconds
+    }, 200); // 2 seconds
 
     return () => clearTimeout(timer); // Cleanup the timer
   }, []);
 
+  // Only show the Preloader if loading is true
   if (loading) {
     return <Preloader />;
   }
@@ -30,11 +31,12 @@ const Home = () => {
       <Banner />
       <Intro />
       <President />
-      <ActivitiesSection/>
+      <ActivitiesSection />
       <StatsSection />
       <Community />
+      {/* Uncomment the Footer if needed */}
       {/* <Footer /> */}
-      <Top/>
+      <Top />
       {/* Other components or content */}
     </div>
   );
