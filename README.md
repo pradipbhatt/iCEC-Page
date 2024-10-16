@@ -1,6 +1,8 @@
 # 🌍 Hacktoberfest 2024: Innovative Computer Engineering Club (iCEC-FWU) 🚀
 
-Welcome to the **Hacktoberfest 2024** repository of the **Innovative Computer Engineering Club (iCEC-FWU)**! 🌟 Join us in celebrating open-source contributions, and let’s build something amazing together. 
+Welcome to the **Hacktoberfest 2024** repository of the **Innovative Computer Engineering Club (iCEC-FWU)**! 🌟 
+
+Join us in celebrating open-source contributions, and let’s build something amazing together. 
 
 This project provides a minimal setup for **React** with **Vite**.
 
@@ -47,25 +49,34 @@ Open a Pull Request 🔀
 Go to the original repository and click “New Pull Request” to submit your changes for review.
 
 
-📋 Contribution Guidelines
+## 📋 Contribution Guidelines
 To maintain a healthy, collaborative environment, please adhere to the following guidelines:
 
 Be Respectful 🙌: Show consideration for all contributors.
+
 Stay Focused 🎯: Keep discussions relevant to the project.
+
 No Spam 🚫: Keep the platform free of unrelated promotions.
+
 Follow Our Code of Conduct: Let’s foster a supportive community!
+
 📊 Suggested Graphics and Improvements
+
 Adding visual elements can enhance the documentation’s readability and engagement. You can:
+
 
 Include diagrams or charts to illustrate how to set up the project or contribute.
 Use emojis 🛠️🔥🎨 throughout for a more inviting and fun documentation style.
 Add screenshots or gifs of the project in action to give contributors a visual preview.
 
-📜 License
+
+## 📜 License
 This project is licensed under the MIT License.
 
 🤗 Get Involved!
-Participating in Hacktoberfest 2024 means you’ll be part of a global community dedicated to open-source. Every contribution counts, and we’re excited to see what you bring to the table. Whether you’re a seasoned developer or a newcomer, there’s a place for you here at iCEC-FWU.
+Participating in Hacktoberfest 2024 means you’ll be part of a global community dedicated to open-source.
+
+Every contribution counts, and we’re excited to see what you bring to the table. Whether you’re a seasoned developer or a newcomer, there’s a place for you here at iCEC-FWU.
 
 👉 Star this repository ⭐ to support our community and stay updated on our latest improvements and contributions!
 
