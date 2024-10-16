@@ -1,8 +1,10 @@
 import React from 'react';
+import Footer from "../components/Footer"
 
 const Apply = () => {
   return (
-    <div className="flex flex-col items-center justify-center py-10 px-6 bg-baseBackground h-screen">
+   <>
+     <div className="flex flex-col items-center justify-center py-10 px-6 bg-baseBackground h-screen">
       <h1 className="text-titleColor text-2xl md:text-3xl font-bold mb-4">
         Apply for Executive Positions
       </h1>
@@ -22,6 +24,8 @@ const Apply = () => {
         </p>
       </div>
     </div>
+    <Footer/>
+   </>
   );
 };
 
