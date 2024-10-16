@@ -1,5 +1,5 @@
 import React from 'react';
-import pradip from "../../public/pradip.jpg"
+import pradip from "/pradip.jpg"
 
 const President = () => {
   return (
