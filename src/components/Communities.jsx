@@ -7,6 +7,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import Footer from './Footer';
 import cs from "../../public/security.png"
 import js from "../../public/js.png"
+import python from "../../src/assets/python.png"
 
 const CommunityCarousel = () => {
   return (
@@ -38,7 +39,7 @@ const CommunityCarousel = () => {
           >
             <SwiperSlide className="swiper-slide mb-16 bg-baseBackground">
               <div className="grid place-content-center place-items-center space-y-2 rounded w-full shadow-md p-8 h-[200px]">
-               <img src="../../src/assets/python.png"  stroke="currentColor"
+               <img src={python}  stroke="currentColor"
                   strokeWidth="0"
                   role="img"
                   color="#666"
