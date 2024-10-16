@@ -27,12 +27,12 @@ const CommunityCarousel = () => {
 
   return (
    <>
-    <div className="flex-col space-y-6 p-6 h-full"> {/* Reduced space-y from 8 to 6 */}
+    <div className="flex-col space-y-6 h-full"> {/* Reduced space-y from 8 to 6 */}
       <div className="flex-col relative">
         <h1 className="text-titleColor text-lg sm:text-2xl md:text-3xl font-bold text-center">
           Communities Active at ICEC
         </h1>
-        <div className="py-6"> {/* Reduced padding on Y-axis */}
+        <div className="p-6"> {/* Reduced padding on Y-axis */}
           <Swiper
             ref={swiperRef}
             spaceBetween={12}
