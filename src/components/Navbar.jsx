@@ -47,7 +47,7 @@ const Navbar = () => {
           }`}
         >
           <div className="flex-col mt-28 px-8 space-y-8 font-sans list-none">
-            <li className="text-titleColor font-semibold transition cursor-pointer border-b-2 hover:text-hoverTextColor">
+            <li className="text-titleColor font-semibold transition cursor-pointer border-b-2 hover:text-hoverTextColor hover:bg-gray-200">
               <a className="flex gap-4" href="/">
                 {/* SVG for Home */}
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-home">
@@ -58,7 +58,7 @@ const Navbar = () => {
               </a>
             </li>
             <li className="relative">
-              <div className="text-titleColor font-semibold transition-all cursor-pointer flex items-center gap-4 hover:text-hoverTextColor" onClick={() => toggleDropdown(1)}>
+              <div className="text-titleColor font-semibold transition-all cursor-pointer flex items-center gap-4 hover:text-hoverTextColor hover:bg-gray-200" onClick={() => toggleDropdown(1)}>
                 {/* SVG for Our Team */}
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-users">
                   <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
@@ -70,15 +70,15 @@ const Navbar = () => {
                 {dropdownOpen === 1 ? <FaCaretUp className="text-titleColor" /> : <FaCaretDown className="text-titleColor" />}
               </div>
               <ul className={`space-y-2 list-none transition-all ${dropdownOpen === 1 ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'} overflow-hidden`}>
-                <li className="cursor-pointer border-b border-navSubitemBorder text-base hover:text-counterBackground">
+                <li className="cursor-pointer border-b border-navSubitemBorder text-base hover:text-counterBackground hover:bg-gray-200">
                   <a href="/executive-committee">Executive Committee</a>
                 </li>
-                <li className="cursor-pointer border-b border-navSubitemBorder text-base hover:text-counterBackground">
+                <li className="cursor-pointer border-b border-navSubitemBorder text-base hover:text-counterBackground hover:bg-gray-200">
                   <a href="/advisory-board">Advisory Board</a>
                 </li>
               </ul>
             </li>
-            <li className="text-titleColor font-semibold transition cursor-pointer border-b-2 hover:text-hoverTextColor">
+            <li className="text-titleColor font-semibold transition cursor-pointer border-b-2 hover:text-hoverTextColor hover:bg-gray-200">
               <a className="flex gap-4" href="/communities">
                 {/* SVG for Communities */}
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-users-round">
@@ -91,7 +91,7 @@ const Navbar = () => {
               </a>
             </li>
             <li className="relative">
-              <div className="text-titleColor font-semibold transition-all cursor-pointer flex items-center gap-4 hover:text-hoverTextColor" onClick={() => toggleDropdown(2)}>
+              <div className="text-titleColor font-semibold transition-all cursor-pointer flex items-center gap-4 hover:text-hoverTextColor hover:bg-gray-200" onClick={() => toggleDropdown(2)}>
                 {/* SVG for Publications */}
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-notebook-pen">
                   <path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4"></path>
@@ -105,12 +105,12 @@ const Navbar = () => {
                 {dropdownOpen === 2 ? <FaCaretUp className="text-titleColor" /> : <FaCaretDown className="text-titleColor" />}
               </div>
               <ul className={`space-y-2 list-none transition-all ${dropdownOpen === 2 ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'} overflow-hidden`}>
-                <li className="cursor-pointer border-b border-navSubitemBorder text-base hover:text-counterBackground">
+                <li className="cursor-pointer border-b border-navSubitemBorder text-base hover:text-counterBackground hover:bg-gray-200">
                   <a href="/soe-express">SOE Express</a>
                 </li>
               </ul>
             </li>
-            <li className="text-titleColor font-semibold transition cursor-pointer border-b-2 hover:text-hoverTextColor">
+            <li className="text-titleColor font-semibold transition cursor-pointer border-b-2 hover:text-hoverTextColor hover:bg-gray-200">
               <a className="flex gap-4" href="/contact">
                 {/* SVG for Contact */}
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-phone">
@@ -120,7 +120,7 @@ const Navbar = () => {
                 Contact
               </a>
             </li>
-            <li className="text-titleColor font-semibold transition cursor-pointer border-b-2 hover:text-hoverTextColor">
+            <li className="text-titleColor font-semibold transition cursor-pointer border-b-2 hover:text-hoverTextColor hover:bg-gray-200">
               <a className="flex gap-4" href="/apply">
                 Apply to be a Member
               </a>
@@ -131,11 +131,11 @@ const Navbar = () => {
 
       {/* Desktop Menu */}
       <div className="hidden lg:flex items-center space-x-8">
-        <a href="/" className="text-titleColor font-semibold hover:text-hoverTextColor transition">
+        <a href="/" className="text-titleColor font-semibold hover:text-hoverTextColor transition hover:bg-gray-200">
           Home
         </a>
         <div className="relative group">
-          <button className="text-titleColor font-semibold flex items-center gap-4 hover:text-hoverTextColor transition">
+          <button className="text-titleColor font-semibold flex items-center gap-4 hover:text-hoverTextColor transition hover:bg-gray-200">
             Our Team
             <FaCaretDown className="text-titleColor" />
           </button>
@@ -152,11 +152,11 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <a href="/communities" className="text-titleColor font-semibold hover:text-hoverTextColor transition">
+        <a href="/communities" className="text-titleColor font-semibold hover:text-hoverTextColor transition hover:bg-gray-200">
           Communities
         </a>
         <div className="relative group">
-          <button className="text-titleColor font-semibold flex items-center gap-4 hover:text-hoverTextColor transition">
+          <button className="text-titleColor font-semibold flex items-center gap-4 hover:text-hoverTextColor transition hover:bg-gray-200">
             Publications
             <FaCaretDown className="text-titleColor" />
           </button>
@@ -168,10 +168,10 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <a href="/contact" className="text-titleColor font-semibold hover:text-hoverTextColor transition">
+        <a href="/contact" className="text-titleColor font-semibold hover:text-hoverTextColor transition hover:bg-gray-200">
           Contact
         </a>
-        <a href="/apply" className="text-titleColor font-semibold hover:text-hoverTextColor transition">
+        <a href="/apply" className="text-titleColor font-semibold hover:text-hoverTextColor transition hover:bg-gray-200">
           Apply to be a Member
         </a>
       </div>
