@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from "../../public/logo.png";
+import logo from "/logo.png";
 import { FaCaretDown, FaCaretUp } from 'react-icons/fa';
 
 const Navbar = () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import sfd from "../../public/sfd.jpeg"; // Ensure the path is correct
+import sfd from "/sfd.jpeg"; // Ensure the path is correct
 
 const Intro = () => {
   return (

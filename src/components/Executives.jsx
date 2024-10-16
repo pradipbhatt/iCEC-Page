@@ -1,9 +1,9 @@
 import React from 'react';
 import Footer from './Footer';
-import dikshya from "../../public/dikshya.jpg"
-import dileep from "../../public/dileep.jpg"
-import ram from "../../public/ram.jpg"
-import logo from "../../public/logo.png"
+import dikshya from "/dikshya.jpg"
+import dileep from "/dileep.jpg"
+import ram from "/ram.jpg"
+import logo from "/logo.png"
 
 // Sample JSON data (you should replace this with actual data from your JSON file)
 const members = [
