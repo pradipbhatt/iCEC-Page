@@ -25,7 +25,7 @@ const Navbar = () => {
             width="100"
             height="100"
             decoding="async"
-            className="w-8 h-8 sm:w-10 sm:h-10 md:w-14 md:h-14 object-cover"
+            className="w-8 h-8 sm:w-10 sm:h-10 md:w-14 md:h-14 object-cover transition-transform duration-300 ease-out hover:scale-110"
             src={logo}
           />
         </a>
