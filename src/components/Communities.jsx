@@ -11,7 +11,7 @@ import js from "/js.png";
 import python from "../../src/assets/python.png";
 import webc from "/webc.jpg";
 import { motion } from 'framer-motion'; 
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 import './CommunityCarousel.css'; 
 
 const CommunityCarousel = () => {
