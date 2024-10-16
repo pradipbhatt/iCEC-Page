@@ -10,6 +10,7 @@ import cs from "/security.png";
 import js from "/js.png";
 import python from "../../src/assets/python.png";
 import webc from "/webc.jpg"
+
 const CommunityCarousel = () => {
   const swiperRef = useRef(null);
 
