@@ -139,7 +139,7 @@ const Navbar = () => {
             Our Team
             <FaCaretDown className="text-titleColor" />
           </button>
-          <ul className="absolute right-0 mt-2 w-48 bg-white border border-gray-300 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
+          <ul className="absolute right-0 mt-2 w-48 bg-white border border-gray-300 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity z-10">
             <li>
               <a href="/executive-committee" className="block px-4 py-2 text-base text-titleColor hover:bg-gray-100">
                 Executive Committee
@@ -160,7 +160,7 @@ const Navbar = () => {
             Publications
             <FaCaretDown className="text-titleColor" />
           </button>
-          <ul className="absolute right-0 mt-2 w-48 bg-white border border-gray-300 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
+          <ul className="absolute right-0 mt-2 w-48 bg-white border border-gray-300 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity z-10">
             <li>
               <a href="/soe-express" className="block px-4 py-2 text-base text-titleColor hover:bg-gray-100">
                 SOE Express
