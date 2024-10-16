@@ -8,6 +8,7 @@ import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 import Footer from './Footer';
 import cs from "../../public/security.png"
 import js from "../../public/js.png"
+import python from "../../src/assets/python.png"
 
 const CommunityCarousel = () => {
   const swiperRef = useRef(null);
@@ -52,10 +53,16 @@ const CommunityCarousel = () => {
             modules={[Navigation, Pagination, Autoplay]}
             className="swiper-container"
           >
-            <SwiperSlide className="swiper-slide mb-4 bg-baseBackground"> {/* Reduced margin bottom */}
-              <div className="grid place-content-center place-items-center space-y-2 rounded w-full shadow-md p-4 h-[200px]">
-                <img src="../../src/assets/python.png" stroke="currentColor" strokeWidth="0" role="img" color="#666" style={{ color: '#666' }} height="80" width="80" alt="Python" />
-                <h1 className="text-lg font-semibold text-center p-2"> {/* Reduced padding */}
+            <SwiperSlide className="swiper-slide mb-16 bg-baseBackground">
+              <div className="grid place-content-center place-items-center space-y-2 rounded w-full shadow-md p-8 h-[200px]">
+               <img src={python}  stroke="currentColor"
+                  strokeWidth="0"
+                  role="img"
+                  color="#666"
+                  style={{ color: '#666' }}
+                  height="80"
+                  width="80" alt="Python " />
+                <h1 className="text-lg font-semibold text-center p-4">
                   Python Community
                 </h1>
               </div>

@@ -10,7 +10,7 @@ const President = () => {
           <h2 className="text-3xl md:text-4xl font-extrabold text-center text-blue-600 mb-6 font-sans">
             OUR PRESIDENT
           </h2>
-          <p className="text-black leading-relaxed mb-4 text-lg font-serif">
+          <p className="text-gray-800 leading-relaxed mb-4 text-lg font-serif">
             <span className="text-2xl font-semibold">Welcome to Innovative Computer Engineering Club (iCEC-FWU)!</span>
           </p>
           <p className="text-black leading-relaxed mb-4 text-lg font-serif">
