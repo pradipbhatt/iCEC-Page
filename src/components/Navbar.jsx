@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import logo from "/logo.png";
-import { FaCaretDown, FaCaretUp } from 'react-icons/fa';
+import { FaCaretDown, FaCaretUp,FaTimes  } from 'react-icons/fa';
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(null);
@@ -24,21 +24,29 @@ const Navbar = () => {
             width="84"
             height="84"
             className="w-16 h-16 sm:w-17 sm:h-17 md:w-20 md:h-20 lg:w-20 lg:h-20 object-contain transition-transform duration-300 ease-out hover:scale-110"
-            src="/logo.png"
+            src={logo}
           />
         </a>
       </div>
 
       {/* Mobile Menu Button */}
       <div className="flex items-center lg:hidden">
-        <button
-          className="flex z-50 justify-center relative cursor-pointer items-center p-2 flex-col space-y-1 aspect-square hover:bg-hoverBgColor rounded transition-all"
-          onClick={toggleMobileMenu}
-        >
-          <div className="w-6 h-[2px] bg-titleColor rounded block transition-all ease-out duration-300 -translate-y-0.5"></div>
-          <div className="w-6 h-[2px] bg-titleColor rounded block transition-all ease-out duration-300 flex"></div>
-          <div className="w-6 h-[2px] bg-titleColor rounded block transition-all ease-out duration-300 translate-y-0.5"></div>
-        </button>
+      <button
+  className="flex z-50 justify-center relative cursor-pointer items-center p-2 flex-col space-y-1 aspect-square hover:bg-hoverBgColor rounded transition-all outline-none focus:outline-none border-none shadow-none"
+  onClick={toggleMobileMenu}
+>
+  {mobileMenuOpen ? (
+    <FaTimes className="w-8 h-8 text-titleColor" />
+  ) : (
+    <>
+      <div className="w-6 h-[2px] bg-titleColor rounded block transition-all ease-out duration-300 -translate-y-0.5"></div>
+      <div className="w-6 h-[2px] bg-titleColor rounded block transition-all ease-out duration-300 flex"></div>
+      <div className="w-6 h-[2px] bg-titleColor rounded block transition-all ease-out duration-300 translate-y-0.5"></div>
+    </>
+  )}
+</button>
+
+
         <div
           className={`flex flex-col transition-all origin-right z-40 h-screen bg-white fixed top-0 right-0 w-2/3 sm:w-1/3 md:w-2/4 shadow-xl transform ${
             mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'

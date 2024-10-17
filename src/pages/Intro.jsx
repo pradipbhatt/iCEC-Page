@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import sfd from "../../public/sfd.jpeg";
+import sfd from "/sfd.jpeg";
 
 const Intro = () => {
   return (
