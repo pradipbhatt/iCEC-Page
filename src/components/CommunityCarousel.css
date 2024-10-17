@@ -1,0 +1,56 @@
+.card {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+  background-color: #f0f8ff;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card img {
+  background: none;
+  border: none;
+  border-radius: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card h1 {
+  transition: color 0.3s ease;
+  color: #333;
+}
+
+.card:hover h1 {
+  color: #007bff;
+}
+
+.card:active {
+  transform: scale(1.05);
+}
+
+.footer {
+  padding: 10px 20px;
+  font-size: 0.875rem;
+  background-color: #f8f9fa;
+}
+
+.footer p,
+.footer a {
+  color: #6c757d;
+  margin: 5px 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}

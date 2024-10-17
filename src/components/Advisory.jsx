@@ -1,8 +1,8 @@
 import React from 'react';
 import Footer from './Footer';
-import dean from "../../public/dean.jpeg"
-import rishi from "../../public/rishi.jpeg"
-import logo from "../../public/logo.png"
+import dean from "/dean.jpeg"
+import rishi from "/rishi.jpeg"
+import logo from "/logo.png"
 
 // Sample JSON data (you should replace this with actual data from your JSON file)
 const members = [
