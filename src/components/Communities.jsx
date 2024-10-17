@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import { motion } from 'framer-motion';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
@@ -8,6 +9,7 @@ import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 import Footer from './Footer';
 import cs from "/security.png"
 import js from "/js.png"
+import webc from "/webc.jpg"
 import python from "../../src/assets/python.png"
 
 const CommunityCarousel = () => {
