@@ -17,16 +17,14 @@ const Navbar = () => {
   return (
     <div className="flex w-full p-4 h-16 md:p-10 justify-between items-center bg-baseBackground z-50">
       {/* Logo Section */}
-      <div>
+      <div className="flex-shrink-0">
         <a className="cursor-pointer" href="/">
           <img
             alt="logo"
-            loading="lazy"
-            width="120"
-            height="120"
-            decoding="async"
-            className="w-8 h-8 sm:w-14 sm:h-14 md:w-20 md:h-20 object-cover transition-transform duration-300 ease-out hover:scale-110"
-            src={logo}
+            width="84"
+            height="84"
+            className="w-16 h-16 sm:w-17 sm:h-17 md:w-20 md:h-20 lg:w-20 lg:h-20 object-contain transition-transform duration-300 ease-out hover:scale-110"
+            src="/logo.png"
           />
         </a>
       </div>
@@ -139,7 +137,7 @@ const Navbar = () => {
             Our Team
             <FaCaretDown className="text-titleColor" />
           </button>
-          <ul className="absolute right-0 mt-2 w-48 bg-white border border-gray-300 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
+          <ul className="absolute right-0 mt-2 w-48 bg-white border border-gray-300 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity z-10">
             <li>
               <a href="/executive-committee" className="block px-4 py-2 text-base text-titleColor hover:bg-gray-100">
                 Executive Committee
@@ -160,7 +158,7 @@ const Navbar = () => {
             Publications
             <FaCaretDown className="text-titleColor" />
           </button>
-          <ul className="absolute right-0 mt-2 w-48 bg-white border border-gray-300 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
+          <ul className="absolute right-0 mt-2 w-48 bg-white border border-gray-300 rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity z-10">
             <li>
               <a href="/soe-express" className="block px-4 py-2 text-base text-titleColor hover:bg-gray-100">
                 SOE Express
