@@ -8,26 +8,23 @@ import Footer from '../components/Footer';
 import Preloader from '../components/Preloader'; // Adjust the path according to where Preloader.jsx is located
 import Top from '../components/Top';
 import ActivitiesSection from './ActivitiesSection';
-
 const Home = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Set a timer to simulate loading
     const timer = setTimeout(() => {
       setLoading(false);
     }, 200); // 2 seconds
 
-    return () => clearTimeout(timer); // Cleanup the timer
+    return () => clearTimeout(timer);
   }, []);
 
-  // Only show the Preloader if loading is true
   if (loading) {
     return <Preloader />;
   }
 
   return (
-    <div>
+    <div className="min-h-screen bg-background bg-grid-desktop bg-no-repeat bg-cover">
       <Banner />
       <Intro />
       <President />

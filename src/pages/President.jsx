@@ -3,7 +3,7 @@ import pradip from "../../public/pradip.jpg"
 
 const President = () => {
   return (
-    <section className="bg-white py-8">
+    <section className="bg-transparent py-8">
       <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center">
         {/* Text Section */}
         <div className="md:w-1/2 mb-6 md:mb-0">
