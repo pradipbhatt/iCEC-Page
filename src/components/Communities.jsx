@@ -6,8 +6,8 @@ import 'swiper/css/pagination';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 import Footer from './Footer';
-import cs from "../../public/security.png"
-import js from "../../public/js.png"
+import cs from "/security.png"
+import js from "/js.png"
 import python from "../../src/assets/python.png"
 
 const CommunityCarousel = () => {
