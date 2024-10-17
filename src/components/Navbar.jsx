@@ -17,16 +17,14 @@ const Navbar = () => {
   return (
     <div className="flex w-full p-4 h-16 md:p-10 justify-between items-center bg-baseBackground z-50">
       {/* Logo Section */}
-      <div>
+      <div className="flex-shrink-0">
         <a className="cursor-pointer" href="/">
           <img
             alt="logo"
-            loading="lazy"
-            width="120"
-            height="120"
-            decoding="async"
-            className="w-8 h-8 sm:w-14 sm:h-14 md:w-20 md:h-20 object-cover transition-transform duration-300 ease-out hover:scale-110"
-            src={logo}
+            width="84"
+            height="84"
+            className="w-16 h-16 sm:w-17 sm:h-17 md:w-20 md:h-20 lg:w-20 lg:h-20 object-contain transition-transform duration-300 ease-out hover:scale-110"
+            src="/logo.png"
           />
         </a>
       </div>
