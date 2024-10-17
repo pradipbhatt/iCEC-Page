@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import logo from "/logo.png";
 import { FaCaretDown, FaCaretUp,FaTimes  } from 'react-icons/fa';
 
@@ -24,7 +24,7 @@ const Navbar = () => {
             width="84"
             height="84"
             className="w-16 h-16 sm:w-17 sm:h-17 md:w-20 md:h-20 lg:w-20 lg:h-20 object-contain transition-transform duration-300 ease-out hover:scale-110"
-            src="/logo.png"
+            src={logo}
           />
         </a>
       </div>
