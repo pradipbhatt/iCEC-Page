@@ -1,6 +1,6 @@
 ## 🌍 Hacktoberfest 2024 Contributions Guide 🚀
 
-Welcome to the Hacktoberfest 2024 project for the **Innovative Computer Engineering Club (iCEC-FWU)**! We're thrilled to have you here and can't wait to see the amazing things you'll create. 
+Welcome to the Hacktoberfest 2024 project for the **Innovative Computer Engineering Club (iCEC-FWU)**! We're thrilled to have you here and can't wait to see the amazing things you'll create.
 
 This guide will walk you through how to contribute to our open-source project. Let’s build something innovative together!
 
@@ -66,17 +66,13 @@ By contributing to this project, you agree that your contributions will be licen
 
 ---
 
-## 👥 Contributors
 
-We value and appreciate every contributor to this project. Here’s a list of the wonderful people who have contributed to making this project better:
+## Our Top Contributors
 
-- [@pradipbhatt](https://github.com/pradipbhatt)
-- [@umeshbhatt2057](https://github.com/umeshbhatt2057)
-- [@arbazahmed07](https://github.com/arbazahmed07)
-- [@Daksh-134](https://github.com/Daksh-134)
-- [@Abhineetsahay](https://github.com/Abhineetsahay)
+<p align="center"><a href="https://github.com/pradipbhatt/iCEC-Page/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=pradipbhatt/iCEC-Page" max="1000" columns="100" anon="1"/>
+</a></p>
 
----
 
 ## 🤗 Getting Help
 
