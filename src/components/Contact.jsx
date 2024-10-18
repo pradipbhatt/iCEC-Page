@@ -25,8 +25,8 @@ const Contact = () => {
                 <div className="col-span-1">
                   <h6 className="text-lg font-semibold">Dipak Raj Giri</h6>
                   <p className="text-base">Club Vice President</p>
-                  <p className="text-base">98********</p>
-                  <p className="text-base text-gray-600">giridipak@gmail.com</p>
+                  <p className="text-base">9864311321</p>
+                  <p className="text-base text-gray-600">giridipak743@gmail.com</p>
                 </div>
                 <div className="col-span-1">
                   <h6 className="text-lg font-semibold">Bipesh Khadka</h6>
