@@ -1,3 +1,5 @@
+<img style="width:100%" src="./logo.png">
+
 # 🌍 Hacktoberfest 2024: Innovative Computer Engineering Club (iCEC-FWU) 🚀
 
 Welcome to the **Hacktoberfest 2024** repository of the **Innovative Computer Engineering Club (iCEC-FWU)**! 🌟
@@ -105,12 +107,9 @@ Add screenshots or gifs of the project in action to give contributors a visual p
 
 ## Our Top Contributors
 
-<p align="center">
-  <a href="https://github.com/pradipbhatt/iCEC-Page/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=pradipbhatt/iCEC-Page" max="1000" columns="100"/>
-  </a>
-</p>
-
+<p align="center"><a href="https://github.com/pradipbhatt/iCEC-Page/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=pradipbhatt/iCEC-Page" max={1000} columns={100} anon={1}/>
+</a></p>
 
 ## 📜 License
 
