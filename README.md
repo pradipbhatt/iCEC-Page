@@ -53,6 +53,30 @@ Push Your Changes 🚀
 git push origin feature/your-feature-name
 ```
 
+# Docker Setup for `icec` Project
+
+This guide explains how to build a Docker image, run a container, and manage the project using Docker.
+
+## Prerequisites
+- [Docker](https://docs.docker.com/get-docker/) installed on your machine
+
+---
+
+## 1. Build the Docker Image
+
+Run the following command in the project directory (where the `Dockerfile` is located):
+
+```bash
+docker build -t icec-app .
+```
+
+## 2. Run the Docker Container
+```bash
+docker run -p 8000:8000 icec-app
+```
+
+You can now access the app at port 8000.
+
 Open a Pull Request 🔀
 
 Go to the original repository and click “New Pull Request” to submit your changes for review.
