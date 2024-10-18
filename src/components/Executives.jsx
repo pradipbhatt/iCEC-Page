@@ -13,14 +13,14 @@ const members = [
       name: 'Pradip Bhatt',
       role: 'President',
       imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.inXgh5O_Chd56OM6PROU1gAAAA%26pid%3DApi&f=1&ipt=123cec7b67b4e941bf4944dfdae504127a7df4fdb76ed75f92fb9f8a9c9e36ff&ipo=images',
-      linkedinUrl: 'https://pradipbhatt.com.np',
+      linkedinUrl: 'https://www.linkedin.com/in/pradipbhatt1326/',
       emailUrl: 'mailto:pradip10bhatt', 
     },
     {
       name: 'Dipak Raj Giri',
       role: 'Vice President',
       imageUrl: Dipak,
-      linkedinUrl: 'https://github.com/Dipakrajgiri',
+      linkedinUrl: 'https://www.linkedin.com/in/dipak-raj-giri-970069234/',
       emailUrl: 'mailto:giridipak743@gmail.com', 
     },
     {
@@ -48,7 +48,7 @@ const members = [
       name: 'Santosh Upadhyay',
       role: 'Tech Lead',
       imageUrl: 'https://avatars.githubusercontent.com/u/101114463?v=4',
-      linkedinUrl: 'https://github.com/santosupadhyay',
+      linkedinUrl: 'https://www.linkedin.com/in/saaandyyy0/',
       emailUrl: 'mailto:santoshupadhyay@example.com',
     },
     {
@@ -69,7 +69,7 @@ const members = [
       name: 'Dipa Joshi',
       role: 'Event Organizer',
       imageUrl: Dipa,
-      linkedinUrl: 'https://github.com/Dipajoshi',
+      linkedinUrl: 'https://www.linkedin.com/in/dipa-joshi-548a79233/',
       emailUrl: 'mailto:joshideepa988@gmail.com', 
     },
     {
