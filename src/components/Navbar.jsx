@@ -5,6 +5,32 @@ import { FaCaretDown, FaCaretUp,FaTimes  } from 'react-icons/fa';
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [homeDropDown, setHomeDropDown] = useState(false);
+  const [publicationDropDown, setPublicationDropDown] = useState(false);
+
+  let timeoutId = null;
+
+  const handleMouseEnter = () => {
+    if (timeoutId) clearTimeout(timeoutId);
+    setHomeDropDown(true);
+  };
+
+  const handleMouseLeave = () => {
+    timeoutId = setTimeout(() => {
+      setHomeDropDown(false);
+    }, 200); 
+  };
+
+  let publicationTimeOut = null;
+  const publicationMouseEnter =()=>{
+    if(publicationTimeOut) clearTimeout(publicationTimeOut);
+    setPublicationDropDown(true);
+  }
+  const publicationMouseLeave = ()=>{
+    publicationTimeOut = setTimeout(()=>{
+      setPublicationDropDown(false);
+    },200)
+  }
 
   const toggleDropdown = (index) => {
     setDropdownOpen(dropdownOpen === index ? null : index);
@@ -140,12 +166,17 @@ const Navbar = () => {
         <a href="/" className="text-titleColor font-semibold hover:text-hoverTextColor transition">
           Home
         </a>
-        <div className="relative group">
-          <button className="text-titleColor font-semibold flex items-center gap-4 hover:text-hoverTextColor transition">
+        <div className="relative "  onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          <button className="text-titleColor font-semibold flex items-center gap-4 hover:text-hoverTextColor transition"
+         
+          >
             Our Team
             <FaCaretDown className="text-titleColor" />
           </button>
-         <ul className="absolute right-0 mt-2 w-48 bg-white border border-gray-300 rounded-md shadow-lg hidden group-hover:block transition-opacity z-10">
+        { homeDropDown && (<ul 
+        className="absolute right-0 mt-2 w-48 bg-white border block border-gray-300 rounded-md shadow-lg transition-opacity z-10"
+        
+        >
             <li>
               <a href="/executive-committee" className="block px-4 py-2 text-base text-titleColor hover:bg-gray-100">
                 Executive Committee
@@ -156,23 +187,23 @@ const Navbar = () => {
                 Advisory Board
               </a>
             </li>
-          </ul>
+          </ul>)}
         </div>
         <a href="/communities" className="text-titleColor font-semibold hover:text-hoverTextColor transition">
           Communities
         </a>
-        <div className="relative group">
+        <div className="relative" onMouseEnter={publicationMouseEnter} onMouseLeave={publicationMouseLeave}>
           <button className="text-titleColor font-semibold flex items-center gap-4 hover:text-hoverTextColor transition">
             Publications
             <FaCaretDown className="text-titleColor" />
           </button>
-          <ul className="absolute right-0 mt-2 w-48 bg-white border border-gray-300 rounded-md shadow-lg hidden group-hover:block transition-opacity z-10">
+         {publicationDropDown && ( <ul className="absolute right-0 mt-2 w-48 bg-white border border-gray-300 rounded-md shadow-lg block transition-opacity z-10">
             <li>
               <a href="/soe-express" className="block px-4 py-2 text-base text-titleColor hover:bg-gray-100">
                 SOE Express
               </a>
             </li>
-          </ul>
+          </ul>)}
         </div>
         <a href="/contact" className="text-titleColor font-semibold hover:text-hoverTextColor transition">
           Contact
