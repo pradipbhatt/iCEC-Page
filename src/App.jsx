@@ -10,7 +10,7 @@ import Apply from './components/Apply';
 import Executives from './components/Executives';
 import Advisory from "./components/Advisory";
 import Soeexpress from './components/Soeexpress';
-
+import Testimonial from './components/Testimonial/Testimonial.';
 const App = () => {
   return (
     <Router>
@@ -25,6 +25,7 @@ const App = () => {
         <Route path="/advisory-board" element={<Advisory />} />
         <Route path="/soe-express" element={<Soeexpress />} />
         <Route path="/apply" element={<Apply />} />
+        <Route path="/testimonial/" element={<Testimonial/>}/>
       </Routes>
     </Router>
   );

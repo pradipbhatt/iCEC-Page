@@ -125,6 +125,11 @@ const Navbar = () => {
                 Apply to be a Member
               </a>
             </li>
+            <li className="text-titleColor font-semibold transition cursor-pointer border-b-2 hover:text-hoverTextColor">
+              <a className="flex gap-4" href="/testimonial">
+               Testimonial
+              </a>
+            </li>
           </div>
         </div>
       </div>
@@ -174,6 +179,10 @@ const Navbar = () => {
         <a href="/apply" className="text-titleColor font-semibold hover:text-hoverTextColor transition">
           Apply to be a Member
         </a>
+        <a href="/testimonial" className="text-titleColor font-semibold hover:text-hoverTextColor transition">
+          Testimonial
+        </a>
+        
       </div>
     </div>
   );
