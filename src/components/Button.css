@@ -1,49 +1,29 @@
-.fancy-button {
-    --color: #560bad;
-    font-family: inherit;
-    display: inline-block;
-    width: 8em;
-    height: 2.6em;
-    line-height: 2.5em;
-    margin: 20px;
-    position: relative;
-    cursor: pointer;
-    overflow: hidden;
-    border: 2px solid var(--color);
-    transition: color 0.5s;
-    z-index: 1;
-    font-size: 17px;
-    border-radius: 6px;
-    font-weight: 500;
-    color: var(--color);
-    background: transparent;
-    text-align: center;
-  }
-  
-  .fancy-button:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    background: var(--color);
-    height: 150px;
-    width: 200px;
-    border-radius: 50%;
-    top: 100%;
-    left: 100%;
-    transition: all 0.7s;
-  }
-  
-  .fancy-button:hover {
-    color: #fff;
-  }
-  
-  .fancy-button:hover:before {
-    top: -30px;
-    left: -30px;
-  }
-  
-  .fancy-button:active:before {
-    background: #3a0ca3;
-    transition: background 0s;
-  }
-  
+/* Button.css */
+
+.button {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease,
+    transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  border: none;
+}
+
+.button:hover {
+  background-color: #ff4e4e;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.button:active {
+  transform: scale(0.97);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.5);
+}
