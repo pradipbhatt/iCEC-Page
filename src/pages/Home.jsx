@@ -7,6 +7,7 @@ import President from "./President";
 import Preloader from "../components/Preloader"; 
 import Top from "../components/Top";
 import ActivitiesSection from "./ActivitiesSection";
+import Testimonial from "../components/Testimonial/Testimonial.";
 
 
 const Home = () => {
@@ -29,7 +30,7 @@ const Home = () => {
       <Banner />
       <Intro />
       <President />
-      <Testimonial />
+      <Testimonial/>
       <ActivitiesSection />
       <StatsSection />
       <Community />
