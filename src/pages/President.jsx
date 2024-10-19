@@ -11,16 +11,16 @@ const President = () => {
             OUR PRESIDENT
           </h2>
           <p className="text-gray-800 leading-relaxed mb-4 text-lg font-serif">
-            <span className="text-2xl font-semibold">Welcome to Innovative Computer Engineering Club (iCEC-FWU)!</span>
+            <span className="text-2xl font-semibold">Welcome to Innovative Computer Engineering Club (ICEC-FWU)!</span>
           </p>
           <p className="text-black leading-relaxed mb-4 text-lg font-serif">
-            Join us in shaping the future of ICT. Welcome to the iCEC-FWU family!
+            Join us in shaping the future of ICT. Welcome to the ICEC-FWU family!
           </p>
           <p className="text-black leading-relaxed mb-4 text-lg font-serif">
-            From 2023, i-CEC-FWU has been at the forefront of ICT development. We provide a platform for students to explore technology, gain industry exposure, and enhance both their technical and soft skills.
+            From 2023, ICEC-FWU has been at the forefront of ICT development. We provide a platform for students to explore technology, gain industry exposure, and enhance both their technical and soft skills.
           </p>
           <p className="text-black leading-relaxed mb-4 text-lg font-serif">
-            i-CEC-FWU is more than a club—it's a community where passion meets dreams, fostering growth and collaboration among tech enthusiasts. We laugh, we enjoy, and we grow together in i-CEC-FWU. We believe in <strong>"i-CEC-FWU for all since 2023."</strong>
+            ICEC-FWU is more than a club—it's a community where passion meets dreams, fostering growth and collaboration among tech enthusiasts. We laugh, we enjoy, and we grow together in ICEC-FWU. We believe in <strong>"ICEC-FWU for all since 2023."</strong>
           </p>
           {/* Removed the Sayonara message */}
         </div>
@@ -34,7 +34,7 @@ const President = () => {
             />
           </div>
           <div className="text-center">
-            <p className="text-lg font-semibold">iCEC-FWU President</p>
+            <p className="text-lg font-semibold">ICEC-FWU President</p>
             <p className="text-xl font-bold">Pradip Bhatt</p>
           </div>
         </div>
