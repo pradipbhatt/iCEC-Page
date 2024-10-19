@@ -35,7 +35,7 @@ const Testimonial = () => {
             key={index}
             className="testimonial-card animate__animated animate__fadeInUp"
           >
-            <img src={testimonial.image} alt={testimonial.name} className="testimonial-img" />
+            <img src={testimonial.image} alt={testimonial.name} className="testimonial-img" id="hai"/>
             <p className="testimonial-feedback">“{testimonial.feedback}”</p>
             <h3 className="testimonial-name">{testimonial.name}</h3>
             <p className="testimonial-title">{testimonial.title}</p>
