@@ -3,14 +3,14 @@ import Button from "../components/Button";
 
 const Banner = () => {
   return (
-    <section className="bg-[#f5f7fa] py-16 px-6">
-      <div className="max-w-screen-xl mx-auto flex flex-col items-center justify-center md:flex-row md:justify-between gap-36">
+    <section className="bg-white py-16 px-6 md:px-12">
+      <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-between">
         {/* Logo Section */}
         <motion.div
-          className="flex justify-center md:w-1/3 mb-12 md:mb-0"
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
+          className="md:w-1/2 flex flex-col items-center mb-8 md:mb-0"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8 }}
         >
           <img
             src="https://www.soenotes.com/assets/logo-icec-COfn0a5B.png"
