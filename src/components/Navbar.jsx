@@ -223,18 +223,18 @@ const Navbar = () => {
         <a href="/contact" className="text-titleColor font-semibold hover:text-hoverTextColor transition">
           Contact
         </a>
-        <a href="/apply" className="text-titleColor font-semibold hover:text-hoverTextColor transition">
+        {/* <a href="/apply" className="text-titleColor font-semibold hover:text-hoverTextColor transition">
           Apply to be a Member
-        </a>
-        <a href="/testimonial" className="text-titleColor font-semibold hover:text-hoverTextColor transition">
+        </a> */}
+        {/* <a href="/testimonial" className="text-titleColor font-semibold hover:text-hoverTextColor transition">
           Testimonial
-        </a>
+        </a> */}
         <a href="/login" className="text-titleColor font-semibold hover:text-hoverTextColor transition">
           Login
         </a>
-        <a href="/registration" className="text-titleColor font-semibold hover:text-hoverTextColor transition">
+        {/* <a href="/registration" className="text-titleColor font-semibold hover:text-hoverTextColor transition">
       Registration
-        </a>
+        </a> */}
       </div>
     </div>
   );

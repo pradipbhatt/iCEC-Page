@@ -5,6 +5,7 @@ import './Login.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import Footer from '../Footer';
 
 const Login = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
@@ -14,7 +15,8 @@ const Login = () => {
   };
 
   return (
-    <section className="vh-100 d-flex flex-column justify-content-between">
+   <>
+     <section className="vh-100 d-flex flex-column justify-content-between">
       <div className="container-fluid h-custom">
         <div className="row d-flex justify-content-center align-items-center h-100 fade-in">
           <div className="col-md-9 col-lg-6 col-xl-5 mb-4">
@@ -25,7 +27,7 @@ const Login = () => {
             />
           </div>
           <div className="col-md-8 col-lg-6 col-xl-4 offset-xl-1 fade-in">
-            <h2 className="mb-4 text-center fw-bold">Login</h2>
+            <h2 className="text-xl my-4 text-center fw-bold">Login</h2>
             <form onSubmit={handleSubmit(onSubmit)} className="px-3">
               {/* Email input */}
               <div className="form-outline mb-4">
@@ -66,7 +68,7 @@ const Login = () => {
                   Login
                 </button>
                 <p className="small fw-bold mt-2 pt-1 mb-0">
-                  Don't have an account? <a href="#!" className="link-danger">Register</a>
+                  Don't have an account? <a href="/registration" className="link-danger">Register</a>
                 </p>
               </div>
             </form>
@@ -91,26 +93,9 @@ const Login = () => {
       </div>
 
       {/* Footer */}
-      <div className="d-flex flex-column flex-md-row text-center text-md-start justify-content-between align-items-center py-3 px-3 px-md-5 bg-primary fade-in">
-        <div className="text-white mb-3 mb-md-0">
-          ICEC © 2024. All rights reserved.
-        </div>
-        <div className="d-flex justify-content-center justify-content-md-end">
-          <a href="#!" className="text-white me-3 me-md-4">
-            <FontAwesomeIcon icon={faFacebookF} />
-          </a>
-          <a href="#!" className="text-white me-3 me-md-4">
-            <FontAwesomeIcon icon={faTwitter} />
-          </a>
-          <a href="#!" className="text-white me-3 me-md-4">
-            <FontAwesomeIcon icon={faEnvelope} />
-          </a>
-          <a href="#!" className="text-white">
-            <FontAwesomeIcon icon={faLinkedinIn} />
-          </a>
-        </div>
-      </div>
+    <Footer/>
     </section>
+   </>
   );
 };
 

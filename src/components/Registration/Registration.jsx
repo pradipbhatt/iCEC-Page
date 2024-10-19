@@ -5,6 +5,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Registration.css';
 import logo from "/logo.png";
+import Footer from '../Footer';
 
 const Registration = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -24,7 +25,8 @@ const Registration = () => {
     };
 
     return (
-        <motion.section
+       <>
+         <motion.section
             className="p-4 p-md-5"
             initial="hidden"
             animate="visible"
@@ -208,6 +210,8 @@ const Registration = () => {
                 </motion.div>
             </div>
         </motion.section>
+        <Footer/>
+       </>
     );
 };
 
