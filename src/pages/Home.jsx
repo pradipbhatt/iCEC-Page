@@ -8,6 +8,7 @@ import Footer from '../components/Footer';
 import Preloader from '../components/Preloader'; // Adjust the path according to where Preloader.jsx is located
 import Top from '../components/Top';
 import ActivitiesSection from './ActivitiesSection';
+import Testimonial from '../components/Testimonial/Testimonial.';
 const Home = () => {
   const [loading, setLoading] = useState(true);
 
@@ -28,6 +29,7 @@ const Home = () => {
       <Banner />
       <Intro />
       <President />
+      <Testimonial />
       <ActivitiesSection />
       <StatsSection />
       <Community />
