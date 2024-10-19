@@ -30,7 +30,8 @@ const Banner = () => {
             <h2 className="text-titleColor text-base md:text-lg font-medium uppercase tracking-wide font-poppins">
               Since 2023, The First Student Computer Club
             </h2>
-            <h1 className="text-titleColor text-3xl md:text-5xl font-bold font-poppins leading-10">
+            
+            <h1 className="text-titleColor text-3xl md:text-5xl font-extrabold font-poppins leading-10">
               Innovative Computer Engineering Club
             </h1>
 
