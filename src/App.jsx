@@ -12,6 +12,7 @@ import Soeexpress from './components/Soeexpress';
 import Testimonial from './components/Testimonial/Testimonial.';
 import Login from './components/Login/Login';
 import Registration from './components/Registration/Registration';
+import ForgotPassword from "./components/ResetPass/ResetPassword"
 const App = () => {
   return (
     <Router>
@@ -29,6 +30,7 @@ const App = () => {
         <Route path="/testimonial/" element={<Testimonial/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/registration" element={<Registration/>}/>
+        <Route path="/forgot-password" element={<ForgotPassword/>}/>
       </Routes>
     </Router>
   );
