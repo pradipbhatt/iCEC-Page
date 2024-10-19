@@ -1,0 +1,49 @@
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+}
+  
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.h-custom {
+  height: calc(100% - 73px);
+}
+
+.btn-floating:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+@media (max-width: 450px) {
+  .h-custom {
+    height: 100%;
+  }
+
+  .form-control-lg {
+    font-size: 0.9rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .btn-lg {
+    padding: 0.8rem 1.2rem;
+    width: 100%;
+  }
+
+  .img-fluid {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .fade-in {
+    animation-duration: 1s;
+  }
+}
