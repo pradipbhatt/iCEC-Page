@@ -4,120 +4,122 @@ import dikshya from "/dikshya.jpg"
 import dileep from "/dileep.jpg"
 import ram from "/ram.jpg"
 import logo from "/logo.png"
+import Dipa from '../assets/dipa.jpg'
+import Dipak from '../assets/dipakPic.jpg'
 
-// Sample JSON data (you should replace this with actual data from your JSON file)
+
 const members = [
     {
       name: 'Pradip Bhatt',
       role: 'President',
       imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.inXgh5O_Chd56OM6PROU1gAAAA%26pid%3DApi&f=1&ipt=123cec7b67b4e941bf4944dfdae504127a7df4fdb76ed75f92fb9f8a9c9e36ff&ipo=images',
-      linkedinUrl: 'https://pradipbhatt.com.np',
-      emailUrl: 'mailto:pradip10bhatt', // Replace with actual email if available
+      linkedinUrl: 'https://www.linkedin.com/in/pradipbhatt1326/',
+      emailUrl: 'mailto:pradip10bhatt', 
     },
     {
       name: 'Dipak Raj Giri',
       role: 'Vice President',
-      imageUrl: 'https://avatars.githubusercontent.com/u/93638459?v=4',
-      linkedinUrl: 'https://github.com/Dipakrajgiri',
-      emailUrl: 'mailto:dipakrajgiri@example.com', // Replace with actual email if available
+      imageUrl: Dipak,
+      linkedinUrl: 'https://www.linkedin.com/in/dipak-raj-giri-970069234/',
+      emailUrl: 'mailto:giridipak743@gmail.com', 
     },
     {
       name: 'Kamal Raj Giri',
       role: 'Treasurer',
       imageUrl: 'https://avatars.githubusercontent.com/u/157484491?v=4',
       linkedinUrl: 'https://github.com/kamalrajgiri',
-      emailUrl: 'mailto:kamalrajgiri@example.com', // Replace with actual email if available
+      emailUrl: 'mailto:kamalrajgiri@example.com', 
     },
     {
       name: 'Ram Bhatta',
       role: 'Secretary',
       imageUrl: ram,
       linkedinUrl: 'https://www.facebook.com/profile.php?id=100075303349545',
-      emailUrl: 'mailto:rambhatta@example.com', // Replace with actual email if available
+      emailUrl: 'mailto:rambhatta@example.com',
     },
     {
       name: 'Bipesh Khadka',
       role: 'General Secretary',
       imageUrl: 'https://avatars.githubusercontent.com/u/106030583?v=4',
       linkedinUrl: 'https://github.com/Bipeshkhadka10',
-      emailUrl: 'mailto:bipeshkhadka@example.com', // Replace with actual email if available
+      emailUrl: 'mailto:bipeshkhadka@example.com', 
     },
     {
       name: 'Santosh Upadhyay',
       role: 'Tech Lead',
       imageUrl: 'https://avatars.githubusercontent.com/u/101114463?v=4',
-      linkedinUrl: 'https://github.com/santosupadhyay',
-      emailUrl: 'mailto:santoshupadhyay@example.com', // Replace with actual email if available
+      linkedinUrl: 'https://www.linkedin.com/in/saaandyyy0/',
+      emailUrl: 'mailto:santoshupadhyay@example.com',
     },
     {
       name: 'Bhupendra',
       role: 'Tech Lead',
       imageUrl: 'https://avatars.githubusercontent.com/u/121709397?v=4',
       linkedinUrl: 'https://github.com/Bhupendra143',
-      emailUrl: 'mailto:bhupendra@example.com', // Replace with actual email if available
+      emailUrl: 'mailto:bhupendra@example.com', 
     },
     {
       name: 'Adarsh Joshi',
       role: 'Tech Lead',
       imageUrl: 'https://example.com/adarsh.jpg',
       linkedinUrl: 'https://github.com/adarshherohoo',
-      emailUrl: 'mailto:adarshjoshi@example.com', // Replace with actual email if available
+      emailUrl: 'mailto:adarshjoshi@example.com', 
     },
     {
-      name: 'Dikshya Bam',
-      role: 'Social Media Handler',
-      imageUrl: dikshya,
-      linkedinUrl: 'https://www.facebook.com/dikshyathakuri13?comment_id=Y29tbWVudDoxMjIxMzM4OTgxMjQwNTEyNzFfMjgwNDk1NTA1MTAyNTAw',
-      emailUrl: 'mailto:dikshya@example.com', // Replace with actual email if available
+      name: 'Dipa Joshi',
+      role: 'Event Organizer',
+      imageUrl: Dipa,
+      linkedinUrl: 'https://www.linkedin.com/in/dipa-joshi-548a79233/',
+      emailUrl: 'mailto:joshideepa988@gmail.com', 
     },
     {
       name: 'Dileep Pant',
       role: 'Event Organizer',
       imageUrl: dileep,
       linkedinUrl: 'https://example.com/dileep_social',
-      emailUrl: 'mailto:dileepant@example.com', // Replace with actual email if available
+      emailUrl: 'mailto:dileepant@example.com', 
     },
     {
       name: 'Saraswoti Bhandari',
       role: 'Event Organizer',
       imageUrl: 'https://avatars.githubusercontent.com/u/143866362?v=4',
       linkedinUrl: 'https://github.com/sarswotibhandari',
-      emailUrl: 'mailto:saraswotibhandari@example.com', // Replace with actual email if available
+      emailUrl: 'mailto:saraswotibhandari@example.com', 
     },
     {
-      name: 'Deepa Joshi',
-      role: 'Event Organizer',
-      imageUrl: 'https://avatars.githubusercontent.com/u/100353866?v=4',
-      linkedinUrl: 'https://github.com/Dipajoshi',
-      emailUrl: 'mailto:deepajoshi@example.com', // Replace with actual email if available
+      name: 'Dikshya Bam',
+      role: 'Social Media Handler',
+      imageUrl: dikshya,
+      linkedinUrl: 'https://www.facebook.com/dikshyathakuri13?comment_id=Y29tbWVudDoxMjIxMzM4OTgxMjQwNTEyNzFfMjgwNDk1NTA1MTAyNTAw',
+      emailUrl: 'mailto:dikshya@example.com', 
     },
     {
       name: 'Hema Dhami',
       role: 'Member',
       imageUrl: 'https://example.com/hema.jpg',
       linkedinUrl: 'https://example.com/hema_social',
-      emailUrl: 'mailto:hemadhami@example.com', // Replace with actual email if available
+      emailUrl: 'mailto:hemadhami@example.com', 
     },
     {
       name: 'Anuradha Bhatta',
       role: 'Member',
       imageUrl: 'https://avatars.githubusercontent.com/u/110050148?v=4',
       linkedinUrl: 'https://github.com/Anubhatta',
-      emailUrl: 'mailto:anuradhabhatta@example.com', // Replace with actual email if available
+      emailUrl: 'mailto:anuradhabhatta@example.com', 
     },
     {
       name: 'Babita Bhatta',
       role: 'Member',
       imageUrl: 'https://avatars.githubusercontent.com/u/109867371?v=4',
       linkedinUrl: 'https://github.com/BabitaBhatt2059',
-      emailUrl: 'mailto:babitabhatta@example.com', // Replace with actual email if available
+      emailUrl: 'mailto:babitabhatta@example.com', 
     },
     {
       name: 'Yogesh Awasthi',
       role: 'Member',
       imageUrl: 'https://avatars.githubusercontent.com/u/121468998?v=4',
       linkedinUrl: 'https://github.com/suddhababa',
-      emailUrl: 'mailto:yogeshawasthi@example.com', // Replace with actual email if available
+      emailUrl: 'mailto:yogeshawasthi@example.com', 
     },
   ];
   

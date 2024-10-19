@@ -1,3 +1,5 @@
+<img style="width:100%" src="./logo.png">
+
 # 🌍 Hacktoberfest 2024: Innovative Computer Engineering Club (iCEC-FWU) 🚀
 
 Welcome to the **Hacktoberfest 2024** repository of the **Innovative Computer Engineering Club (iCEC-FWU)**! 🌟
@@ -58,6 +60,7 @@ git push origin feature/your-feature-name
 This guide explains how to build a Docker image, run a container, and manage the project using Docker.
 
 ## Prerequisites
+
 - [Docker](https://docs.docker.com/get-docker/) installed on your machine
 
 ---
@@ -71,6 +74,7 @@ docker build -t icec-app .
 ```
 
 ## 2. Run the Docker Container
+
 ```bash
 docker run -p 8000:8000 icec-app
 ```
@@ -101,14 +105,11 @@ Include diagrams or charts to illustrate how to set up the project or contribute
 Use emojis 🛠️🔥🎨 throughout for a more inviting and fun documentation style.
 Add screenshots or gifs of the project in action to give contributors a visual preview.
 
-
-
 ## Our Top Contributors
 
 <p align="center"><a href="https://github.com/pradipbhatt/iCEC-Page/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=pradipbhatt/iCEC-Page" max="1000" columns="100" anon="1"/>
+  <img src="https://contrib.rocks/image?repo=pradipbhatt/iCEC-Page" max={1000} columns={100} anon={1}/>
 </a></p>
-
 
 ## 📜 License
 

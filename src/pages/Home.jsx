@@ -8,6 +8,7 @@ import Preloader from "../components/Preloader";
 import Top from "../components/Top";
 import ActivitiesSection from "./ActivitiesSection";
 
+
 const Home = () => {
   const [loading, setLoading] = useState(true);
 
@@ -28,6 +29,7 @@ const Home = () => {
       <Banner />
       <Intro />
       <President />
+      <Testimonial />
       <ActivitiesSection />
       <StatsSection />
       <Community />
