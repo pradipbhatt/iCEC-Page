@@ -1,4 +1,4 @@
-<img style="width:100%" src="./logo.png">
+<img style="width:100%" src="./logo.jpg">
 
 # 🌍 Hacktoberfest 2024: Innovative Computer Engineering Club (iCEC-FWU) 🚀
 
