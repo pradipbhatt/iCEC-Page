@@ -1,6 +1,7 @@
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import { motion } from 'framer-motion';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
@@ -8,11 +9,8 @@ import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 import Footer from './Footer';
 import cs from "/security.png";
 import js from "/js.png";
-import python from "../../src/assets/python.png";
 import webc from "/webc.jpg";
-import { motion } from 'framer-motion'; 
-
-import './CommunityCarousel.css'; 
+import python from "../../src/assets/python.png";
 
 const CommunityCarousel = () => {
   const swiperRef = useRef(null);
@@ -34,6 +32,23 @@ const CommunityCarousel = () => {
     setActiveCard(activeCard === index ? null : index);
   };
 
+  // Keyboard navigation
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === 'ArrowRight') {
+        nextImage();
+      } else if (event.key === 'ArrowLeft') {
+        prevImage();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
+
   return (
     <>
       <div className="flex-col space-y-6 p-6 h-full">
@@ -44,7 +59,7 @@ const CommunityCarousel = () => {
           <div className="py-6 px-14 relative">
             <Swiper
               ref={swiperRef}
-              spaceBetween={12}
+              spaceBetween={20} // Increased space between slides
               slidesPerView={'auto'}
               loop={true}
               autoplay={{ delay: 4000, disableOnInteraction: false }}
@@ -64,9 +79,10 @@ const CommunityCarousel = () => {
               ].map((community, index) => (
                 <SwiperSlide key={index} className="swiper-slide mb-4 bg-baseBackground">
                   <motion.div
-                    className={`grid place-content-center place-items-center space-y-2 rounded w-full shadow-md p-4 h-[200px] card transition-all ${activeCard === index ? 'scale-110' : 'scale-100'} hover:bg-light`} 
+                    className={`grid place-content-center place-items-center space-y-2 rounded w-full shadow-md p-4 h-[200px] card transition-all 
+                      ${activeCard === index ? 'scale-105' : 'scale-100'} hover:bg-blue-100`} 
                     onClick={() => handleCardClick(index)}
-                    whileHover={{ scale: 1.1 }} // Increase scale on hover
+                    whileHover={{ scale: 1.05 }} // Slightly increase scale on hover to prevent overlap
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: activeCard === index ? 1.1 : 1 }} 
                     transition={{ duration: 0.3 }} 
@@ -77,6 +93,7 @@ const CommunityCarousel = () => {
                       alt={community.title}
                       height="80"
                       width="80"
+                      loading="lazy" // Lazy load the images
                     />
                     <motion.h1 
                       className="text-lg font-semibold text-center p-2 transition-colors duration-300 hover:text-primary"
@@ -115,4 +132,5 @@ const CommunityCarousel = () => {
     </>
   );
 };
+
 export default CommunityCarousel;

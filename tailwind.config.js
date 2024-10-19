@@ -22,6 +22,17 @@ export default {
         base: '24px',
         title: '36px', // Added custom line height for titles
       },
+      backgroundImage: {
+        'grid-mobile': 'linear-gradient(to right, rgba(0,0,0,0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,0,0,0.1) 1px, transparent 1px)',
+        'grid-tablet': 'linear-gradient(to right, rgba(0,0,0,0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,0,0,0.1) 1px, transparent 1px)',
+        'grid-desktop': 'linear-gradient(to right, rgba(0,0,0,0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,0,0,0.1) 1px, transparent 1px)',
+      },
+      backgroundSize: {
+        'grid-mobile': '20px 20px', // Smaller grid for mobile
+        'grid-tablet': '30px 30px', // Medium grid size
+        'grid-desktop': '40px 40px', // Larger grid size
+        'grid-xl': '50px 50px',      // Even larger grid size for extra-large screens
+      },
     },
   },
   plugins: [],

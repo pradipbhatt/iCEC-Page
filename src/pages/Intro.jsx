@@ -1,36 +1,82 @@
 import React from 'react';
-import sfd from "/sfd.jpeg"; // Ensure the path is correct
+import { motion } from 'framer-motion';
+import sfd from "/sfd.jpeg";
 
 const Intro = () => {
   return (
-    <section className="flex flex-col py-8 px-14 h-full bg-baseBackground">
-      <h1 className="text-titleColor text-lg sm:text-2xl md:text-3xl font-bold text-center mb-6">
-        Software Freedom Day 2024: A Celebration in Farwest
-      </h1>
-      <div className="flex flex-col md:flex-row max-w-screen-xl mx-auto md:gap-8 place-items-center justify-center">
-        <p className="text-justify max-w-[80ch] text-primary text-base md:text-lg leading-[24px] font-inter mb-6 md:mb-0 md:w-1/2">
-          We are thrilled to share that we successfully organized Software Freedom Day 2024 for the first time in the Farwest region of Nepal! 💐
-          <br /><br />
-          A heartfelt thank you to our entire organizing team for making this event a memorable celebration, and for giving me the opportunity to speak to such a passionate group of students about Hacktoberfest and the significance of contributing to open-source projects.
-          <br /><br />
-          we are incredibly grateful to the student communities for their active participation without you, this event would not have been possible. Together, we’re fostering a culture of collaboration, learning, and innovation!
-          <br /><br />
-          Special thanks to IICC Club, SNSC IT Club, and YouthMapper for their collaboration with us (ICEC Club) 👏.<br></br> A big thank you to all the professors who guided us in organizing such a fantastic event 🙏.
-        </p>
-        <img
-          alt="Software Freedom Day Logo"
-          loading="lazy"
-          width="500"
-          height="500"
-          decoding="async"
-          className="object-contain max-w-[400px] md:max-w-[600px] md:h-auto md:w-auto" // Adjust dimensions for horizontal image
-          src={sfd}
-        />
-      </div>
-      <div className="flex justify-center mt-4">
-        <p className="text-primary text-base md:text-lg font-semibold">
-          #SoftwareFreedomDay #Hacktoberfest #OpenSource #Farwest #Community #ICEC_Club
-        </p>
+    <section className="bg-white py-12">
+      <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center">
+        {/* Text Section */}
+        <div className="md:w-1/2 mb-8 md:mb-0">
+          <motion.h2 
+            className="text-3xl md:text-4xl font-extrabold text-center text-blue-600 mb-6"
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            SOFTWARE FREEDOM DAY 2024
+          </motion.h2>
+          <motion.p 
+            className="text-black leading-relaxed mb-4 text-lg font-serif"
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            <span className="text-2xl font-semibold">
+              Join us in celebrating open-source freedom!
+            </span>
+          </motion.p>
+          <motion.p 
+            className="text-gray-800 leading-relaxed mb-4 text-lg font-serif"
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+          >
+            The Innovative Computer Engineering Club (iCEC-FWU) hosted a historic Software Freedom Day event. Together, we are fostering a community that values open-source, collaboration, and innovation.
+          </motion.p>
+          <motion.p 
+            className="text-black leading-relaxed mb-4 text-lg font-serif"
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
+            With participants from all over, iCEC-FWU is more than just a club—it’s a family united by a love for technology and a shared vision for the future.
+          </motion.p>
+          <motion.p 
+            className="text-black leading-relaxed mb-4 text-lg font-serif"
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+          >
+            Thank you to all our partners and attendees for making this event memorable. Here’s to open-source, to growth, and to the future of tech in Farwest Nepal.
+          </motion.p>
+        </div>
+
+        {/* Image Section */}
+        <div className="md:w-1/2 flex flex-col items-center">
+          <motion.div 
+            className="w-64 h-64 md:w-80 md:h-80 bg-white rounded-lg shadow-[10px_10px_20px_rgba(0,0,0,0.2)] flex items-center justify-center overflow-hidden mb-4"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+          >
+            <img
+              src={sfd}
+              alt="Group Photo from Software Freedom Day 2024"
+              className="w-full h-full object-cover"
+            />
+          </motion.div>
+          <div className="text-center">
+            <p className="text-lg font-semibold">Celebrating Together</p>
+            <p className="text-xl font-bold">iCEC-FWU</p>
+          </div>
+        </div>
       </div>
     </section>
   );
