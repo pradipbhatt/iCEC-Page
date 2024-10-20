@@ -3,7 +3,7 @@ import React from 'react';
 const ActivitiesSection = () => {
   return (
     <div className="flex flex-col space-y-8 p-5 bg-transparent">
-      <h2 className="text-subTitleColor font-semibold text-base sm:text-lg md:text-xl text-center">
+      <h2 className="text-xl text-titleColor font-semibold text-base sm:text-lg md:text-xl text-center">
         What We Do
       </h2>
       <h1 className="text-titleColor text-2xl sm:text-3xl md:text-4xl font-bold text-center">
@@ -12,7 +12,7 @@ const ActivitiesSection = () => {
       <div className="flex flex-col p-2">
         <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 max-w-screen-xl mx-auto">
           {/* Activity Card 1 */}
-          <div className="flex flex-col bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6">
+          <div className="flex flex-col bg-gray-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6">
             <div className="flex justify-center mb-4">
               <svg
                 stroke="currentColor"
@@ -38,7 +38,7 @@ const ActivitiesSection = () => {
           </div>
           
           {/* Activity Card 2 */}
-          <div className="flex flex-col bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6">
+          <div className="flex flex-col bg-gray-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6">
             <div className="flex justify-center mb-4">
               <svg
                 stroke="currentColor"
@@ -63,7 +63,7 @@ const ActivitiesSection = () => {
           </div>
 
           {/* Activity Card 3 */}
-          <div className="flex flex-col bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6">
+          <div className="flex flex-col bg-gray-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6">
             <div className="flex justify-center mb-4">
               <svg
                 stroke="currentColor"
