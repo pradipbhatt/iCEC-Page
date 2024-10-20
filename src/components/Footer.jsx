@@ -44,10 +44,10 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a 
-                  href="mailto:icecfwu@fwu.edu.np" 
+                  href="mailto:ICECfwu@fwu.edu.np" 
                   className="text-base md:text-lg hover:underline hover:text-blue-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 >
-                  icecfwu@fwu.edu.np
+                  ICECfwu@fwu.edu.np
                 </a>
               </li>
               <li>
@@ -59,7 +59,7 @@ const Footer = () => {
                 </a>
               </li>
               <li className="text-base md:text-lg">
-                iCEC-FWU, Mahendranagar, Nepal
+                ICEC-FWU, Mahendranagar, Nepal
               </li>
             </ul>
             {/* Social Icons */}
@@ -118,7 +118,7 @@ const Footer = () => {
               We are always looking for passionate individuals to join our community. If you're interested in becoming a member, reach out to us via email or visit our website to learn more about the application process.
             </p>
             <motion.a 
-              href="mailto:icecfwu@fwu.edu.np" 
+              href="mailto:ICECfwu@fwu.edu.np" 
               className="inline-block bg-blue-600 text-white px-4 md:px-6 py-3 rounded-full hover:bg-blue-700 transition-colors duration-300 shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -147,7 +147,7 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="border-t border-gray-300 mt-8 pt-4 text-center">
           <p className="text-sm">
-            © 2024 Innovative Computer Engineering Club (iCEC-FWU). All rights reserved.
+            © 2024 Innovative Computer Engineering Club (ICEC-FWU). All rights reserved.
           </p>
         </div>
       </div>
