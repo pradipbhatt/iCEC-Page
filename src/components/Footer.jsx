@@ -59,7 +59,7 @@ const Footer = () => {
                 </a>
               </li>
               <li className="text-base md:text-lg">
-                iCEC-FWU, Mahendranagar, Nepal
+                ICEC-FWU, Mahendranagar, Nepal
               </li>
             </ul>
             {/* Social Icons */}
