@@ -1,9 +1,8 @@
-import React from 'react';
-import '../components/Button.css'; // Import the CSS file for styles
+import "../components/Button.css";
 
 const Button = ({ children, ...props }) => {
   return (
-    <button className="fancy-button" {...props}>
+    <button className="button" {...props}>
       {children}
     </button>
   );
