@@ -107,8 +107,8 @@ Add screenshots or gifs of the project in action to give contributors a visual p
 
 ## Our Top Contributors
 
-<p align="center"><a href="https://github.com/pradipbhatt/iCEC-Page/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=pradipbhatt/iCEC-Page" max={1000} columns={100} anon={1}/>
+<p align="center"><a href="https://github.compradipbhatt/iCEC-Page/contributors">
+  <img src="https://contrib.rocks/image?repo=pradipbhatt/iCEC-Page&&max=817" /> 
 </a></p>
 
 ## 📜 License
