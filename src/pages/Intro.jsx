@@ -34,9 +34,7 @@ const Intro = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            The Innovative Computer Engineering Club (iCEC-FWU) hosted a
-            historic Software Freedom Day event, fostering a community that
-            values open-source, collaboration, and innovation.
+            The Innovative Computer Engineering Club (ICEC-FWU) hosted a historic Software Freedom Day event. Together, we are fostering a community that values open-source, collaboration, and innovation.
           </motion.p>
           <motion.p
             className="text-gray-600 leading-relaxed text-xl mb-4"
@@ -45,9 +43,8 @@ const Intro = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            With participants from all over, iCEC-FWU is more than just a
-            club—it’s a family united by a love for technology and a shared
-            vision for the future.
+
+            With participants from all over, ICEC-FWU is more than just a club—it’s a family united by a love for technology and a shared vision for the future.
           </motion.p>
           <motion.p
             className="text-gray-600 leading-relaxed text-xl mb-4"
@@ -78,12 +75,9 @@ const Intro = () => {
             />
           </motion.div>
           <div className="text-center">
-            <p className="text-xl font-bold text-purple-700 mb-2">
-              Celebrating Together
-            </p>
-            <p className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-red-500">
-              iCEC-FWU
-            </p>
+            <p className="text-lg font-semibold">Celebrating Together</p>
+            <p className="text-xl font-bold">ICEC-FWU</p>
+
           </div>
         </div>
       </div>
