@@ -13,6 +13,7 @@ import Testimonial from './components/Testimonial/Testimonial.';
 import Login from './components/Login/Login';
 import Registration from './components/Registration/Registration';
 import ForgotPassword from "./components/ResetPass/ResetPassword"
+import './App.css'
 const App = () => {
   return (
     <Router>

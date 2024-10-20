@@ -1,0 +1,21 @@
+
+.my-links{
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+
+.my-links::after{
+    content: ' ';
+    width: 0%;
+    height: 3px;
+    background-color: #4064c6;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.my-links:hover::after{
+    width: 100%;
+}
