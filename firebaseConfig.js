@@ -2,6 +2,7 @@ import { initializeApp } from "firebase/app";
 import {
   getAuth,
   GoogleAuthProvider,
+  GithubAuthProvider,
   signInWithPopup,
 } from "firebase/auth";
 
@@ -22,5 +23,6 @@ export {
   app,
   auth,
   GoogleAuthProvider,
+  GithubAuthProvider,
   signInWithPopup,
 };

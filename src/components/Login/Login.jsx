@@ -2,18 +2,17 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Login.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { FaEnvelope, FaGithub } from 'react-icons/fa'; // Import React Icons
 import Footer from '../Footer';
 import { auth } from '../../../firebaseConfig';
-import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+import { GoogleAuthProvider,GithubAuthProvider, signInWithPopup } from 'firebase/auth';
 import { toast } from 'react-toastify';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useNavigate } from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
-  const navigate = useNavigate(); // Initialize navigate
+  const navigate = useNavigate();
   const [showPhoneForm, setShowPhoneForm] = useState(false);
 
   const onSubmit = (data) => {
@@ -28,13 +27,26 @@ const Login = () => {
       const result = await signInWithPopup(auth, provider);
       console.log('Google sign-in successful', result.user);
       toast.success('Google Sign-in successful!');
-      localStorage.setItem('token', result.user.accessToken); // Store token in localStorage
-      
-      // Redirect to the homepage
-      navigate('/'); // Redirect to the homepage after successful login
+      localStorage.setItem('token', result.user.accessToken);
+      navigate('/');
     } catch (error) {
       console.error('Google sign-in error', error);
       toast.error('Google Sign-in failed!');
+    }
+  };
+
+  // Handle GitHub sign-in (you'll need to implement this if required)
+  const handleGithubSignIn = async () => {
+    const provider = new GithubAuthProvider(); // Use GithubAuthProvider from Firebase
+    try {
+      const result = await signInWithPopup(auth, provider);
+      console.log('GitHub sign-in successful', result.user);
+      toast.success('GitHub Sign-in successful!');
+      localStorage.setItem('token', result.user.accessToken);
+      navigate('/');
+    } catch (error) {
+      console.error('GitHub sign-in error', error);
+      toast.error('GitHub Sign-in failed!');
     }
   };
 
@@ -102,15 +114,16 @@ const Login = () => {
                 <p className="text-center fw-bold mx-3 mb-0">Or sign in with</p>
               </div>
               <div className="d-flex flex-row align-items-center justify-content-center justify-content-lg-start mb-4">
-                <button type="button" className="btn btn-primary  w-100 mx-1" onClick={handleGoogleSignIn}>
-                  <FontAwesomeIcon icon={faEnvelope} /> Google
+                <button type="button" className="btn btn-primary w-100 mx-1" onClick={handleGoogleSignIn}>
+                  <FaEnvelope /> Google
+                </button>
+                <button type="button" className="btn btn-dark w-100 mx-1" onClick={handleGithubSignIn}>
+                  <FaGithub /> GitHub
                 </button>
               </div>
             </div>
           </div>
         </div>
-        {/* Recaptcha container */}
-        <div id="recaptcha-container"></div>
       </section>
     </>
   );
