@@ -2,18 +2,16 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Login.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { FaEnvelope, FaGithub, FaFacebook } from 'react-icons/fa'; // Import React Icons
 import Footer from '../Footer';
-import { auth } from '../../../firebaseConfig';
-import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+import { auth, GoogleAuthProvider, GithubAuthProvider, FacebookAuthProvider, signInWithPopup } from '../../../firebaseConfig';
 import { toast } from 'react-toastify';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useNavigate } from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
-  const navigate = useNavigate(); // Initialize navigate
+  const navigate = useNavigate();
   const [showPhoneForm, setShowPhoneForm] = useState(false);
 
   const onSubmit = (data) => {
@@ -28,15 +26,60 @@ const Login = () => {
       const result = await signInWithPopup(auth, provider);
       console.log('Google sign-in successful', result.user);
       toast.success('Google Sign-in successful!');
-      localStorage.setItem('token', result.user.accessToken); // Store token in localStorage
-      
-      // Redirect to the homepage
-      navigate('/'); // Redirect to the homepage after successful login
+      localStorage.setItem('token', result.user.accessToken);
+      window.location.reload(); // Refresh the page to show the data
     } catch (error) {
       console.error('Google sign-in error', error);
       toast.error('Google Sign-in failed!');
     }
   };
+
+  // Handle GitHub sign-in
+  const handleGithubSignIn = async () => {
+    const provider = new GithubAuthProvider();
+    try {
+      const result = await signInWithPopup(auth, provider);
+      console.log('GitHub sign-in successful', result.user);
+      toast.success('GitHub Sign-in successful!');
+      localStorage.setItem('token', result.user.accessToken);
+      window.location.reload(); // Refresh the page to show the data
+    } catch (error) {
+      console.error('GitHub sign-in error', error);
+      toast.error('GitHub Sign-in failed!');
+    }
+  };
+
+  // Handle Facebook sign-in
+// Handle Facebook sign-in
+const handleFacebookSignIn = async () => {
+  const provider = new FacebookAuthProvider(); // Use FacebookAuthProvider from Firebase
+  try {
+    const result = await signInWithPopup(auth, provider);
+    console.log('Facebook sign-in successful', result.user);
+    toast.success('Facebook Sign-in successful!');
+    localStorage.setItem('token', result.user.accessToken);
+    navigate('/');
+  } catch (error) {
+    console.error('Facebook sign-in error', error);
+    toast.error('Facebook Sign-in failed!');
+
+    // Handle specific error for account already exists
+    if (error.code === 'auth/account-exists-with-different-credential') {
+      const email = error.email; // The email associated with the existing account
+      try {
+        const methods = await fetchSignInMethodsForEmail(auth, email);
+        
+        // Inform the user about the existing sign-in methods
+        if (methods.length > 0) {
+          toast.warn(`This email is already linked with another sign-in method. Please sign in using: ${methods.join(', ')}`);
+        }
+      } catch (err) {
+        console.error('Error fetching sign-in methods', err);
+      }
+    }
+  }
+};
+
 
   return (
     <>
@@ -102,15 +145,19 @@ const Login = () => {
                 <p className="text-center fw-bold mx-3 mb-0">Or sign in with</p>
               </div>
               <div className="d-flex flex-row align-items-center justify-content-center justify-content-lg-start mb-4">
-                <button type="button" className="btn btn-primary  w-100 mx-1" onClick={handleGoogleSignIn}>
-                  <FontAwesomeIcon icon={faEnvelope} /> Google
+                <button type="button" className="btn btn-primary w-100 mx-1" onClick={handleGoogleSignIn}>
+                  <FaEnvelope /> Google
+                </button>
+                <button type="button" className="btn btn-dark w-100 mx-1" onClick={handleGithubSignIn}>
+                  <FaGithub /> GitHub
+                </button>
+                <button type="button" className="btn btn-primary w-100 mx-1" onClick={handleFacebookSignIn}>
+                  <FaFacebook /> Facebook
                 </button>
               </div>
             </div>
           </div>
         </div>
-        {/* Recaptcha container */}
-        <div id="recaptcha-container"></div>
       </section>
     </>
   );

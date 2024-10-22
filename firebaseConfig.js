@@ -1,7 +1,11 @@
+// firebaseConfig.js
+
 import { initializeApp } from "firebase/app";
 import {
   getAuth,
   GoogleAuthProvider,
+  GithubAuthProvider,
+  FacebookAuthProvider,
   signInWithPopup,
 } from "firebase/auth";
 
@@ -22,5 +26,7 @@ export {
   app,
   auth,
   GoogleAuthProvider,
+  GithubAuthProvider,
+  FacebookAuthProvider,
   signInWithPopup,
 };
