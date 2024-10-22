@@ -1,14 +1,30 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { motion } from 'framer-motion';
+import axios from 'axios';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const ResetPassword = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
 
-    const onSubmit = (data) => {
-        console.log('Reset password link sent to:', data.email);
-        // Here you can add the logic to call your backend or Firebase to send a password reset email
+    const onSubmit = async (data) => {
+        try {
+            // Send the request to the forgot password API
+            const response = await axios.post('https://icec.onrender.com/api/users/forgot-password', {
+                email: data.email,
+            });
+
+            // Show success toast
+            toast.success('Password reset link has been sent to your email.');
+            console.log('Response:', response.data);
+
+        } catch (error) {
+            // Show error toast
+            toast.error('Failed to send reset link. Please try again later.');
+            console.error('Error:', error.response ? error.response.data : error.message);
+        }
     };
 
     // Animation variants
@@ -26,12 +42,12 @@ const ResetPassword = () => {
             transition={{ duration: 1 }}
         >
             <motion.div
-                className="shadow-md rounded-md max-w-4xl w-full h-[600px] bg-white" // Increased height to 600px
+                className="shadow-md rounded-md max-w-4xl w-full h-[600px] bg-white"
                 initial={{ scale: 0.9 }}
                 animate={{ scale: 1 }}
                 transition={{ duration: 0.5 }}
             >
-                <div className="flex flex-col md:flex-row h-full"> {/* Ensure full height for inner divs */}
+                <div className="flex flex-col md:flex-row h-full">
                     <div className="w-full md:w-1/2 bg-gray-100">
                         <div className="flex items-center justify-center h-full p-4">
                             <div className="w-10/12 xl:w-8/12 py-4">
@@ -51,7 +67,7 @@ const ResetPassword = () => {
                                 </h3>
                             </div>
                             <form onSubmit={handleSubmit(onSubmit)}>
-                                <div className="space-y-8"> {/* Adjusted space-y for more gap */}
+                                <div className="space-y-8">
                                     <div>
                                         <label htmlFor="email" className="block text-sm font-medium text-gray-700">
                                             Email <span className="text-red-500">*</span>
@@ -99,6 +115,8 @@ const ResetPassword = () => {
                     </div>
                 </div>
             </motion.div>
+            {/* Toast container */}
+            <ToastContainer />
         </motion.section>
     );
 };

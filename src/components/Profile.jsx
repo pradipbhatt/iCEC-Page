@@ -15,18 +15,37 @@ const Profile = () => {
     if (token) {
       try {
         const decoded = jwtDecode(token);
-        setUserData({
-          name: decoded.name || "N/A",
-          picture: decoded.picture || "N/A",
-          email: decoded.email || "N/A",
-          email_verified: decoded.email_verified || "N/A",
-          provider: decoded.firebase.sign_in_provider || "N/A",
-        });
+        // Check if it's a Firebase token or a custom token
+        if (decoded.firebase) {
+          // Firebase token
+          setUserData({
+            name: decoded.name || "N/A",
+            picture: decoded.picture || "N/A",
+            email: decoded.email || "N/A",
+            email_verified: decoded.email_verified || "N/A",
+            provider: decoded.firebase.sign_in_provider || "N/A",
+            id: decoded.uid || "N/A", // uid for Firebase
+            isAdmin: false, // or derive from your logic
+          });
+        } else {
+          // Custom token
+          setUserData({
+            name: decoded.name || "N/A",
+            picture: "N/A", // Assuming no picture in custom token
+            email: decoded.email || "N/A",
+            email_verified: "N/A", // Assuming no email_verified in custom token
+            provider: "N/A", // Assuming no provider in custom token
+            id: decoded.id || "N/A", // id from custom token
+            isAdmin: decoded.isAdmin || false, // isAdmin from custom token
+          });
+        }
       } catch (error) {
         console.error("Invalid token:", error);
       }
     }
   }, []);
+
+
 
   const handleLogout = () => {
     // Remove token from localStorage and redirect to login
