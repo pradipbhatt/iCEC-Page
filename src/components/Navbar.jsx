@@ -60,15 +60,16 @@ const Navbar = () => {
     <div className="flex w-full p-4 h-16 md:p-10 justify-between items-center bg-baseBackground z-50">
       {/* Logo Section */}
       <div className="flex-shrink-0">
-        <a className="cursor-pointer" href="/">
-          <img
-            alt="logo"
-            width="84"
-            height="84"
-            className="w-16 h-16 sm:w-17 sm:h-17 md:w-20 md:h-20 lg:w-20 lg:h-20 object-contain transition-transform duration-300 ease-out hover:scale-110"
-            src={logo}
-          />
-        </a>
+      <a className="cursor-pointer" href="/">
+  <img
+    alt="logo"
+    width="84"
+    height="84"
+    className="w-14 h-14 sm:w-15 sm:h-15 md:w-18 md:h-18 lg:w-18 lg:h-18 object-contain transition-transform duration-300 ease-out hover:scale-110"
+    src={logo}
+  />
+</a>
+
       </div>
 
       {/* Mobile Menu Button */}
