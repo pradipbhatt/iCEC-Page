@@ -9,7 +9,7 @@ const Navbar = () => {
   const [homeDropDown, setHomeDropDown] = useState(false);
   const [publicationDropDown, setPublicationDropDown] = useState(false);
   const [user, setUser] = useState(null); // State to hold user information
-  const [token, setToken] = useState(localStorage.getItem('token')); // Get token from localStorage
+  const [token, setToken] = useState(localStorage.getItem("token")); // Get token from localStorage
 
   useEffect(() => {
     if (token) {
@@ -46,29 +46,30 @@ const Navbar = () => {
     }, 200);
   };
 
-  const toggleDropdown = () => {
-    setDropdownOpen(!dropdownOpen);
+  const toggleDropdown = (id) => {
+    setDropdownOpen(dropdownOpen === id ? null : id); // Toggle based on ID
   };
 
   const handleLogout = () => {
-    localStorage.removeItem('token');
+    localStorage.removeItem("token");
     setUser(null);
-    window.location.href = '/login';
+    window.location.href = "/login";
   };
 
   return (
     <div className="flex w-full p-4 h-16 md:p-10 justify-between items-center bg-baseBackground z-50">
       {/* Logo Section */}
       <div className="flex-shrink-0">
-        <a className="cursor-pointer" href="/">
-          <img
-            alt="logo"
-            width="84"
-            height="84"
-            className="w-16 h-16 sm:w-17 sm:h-17 md:w-20 md:h-20 lg:w-20 lg:h-20 object-contain transition-transform duration-300 ease-out hover:scale-110"
-            src={logo}
-          />
-        </a>
+      <a className="cursor-pointer" href="/">
+  <img
+    alt="logo"
+    width="84"
+    height="84"
+    className="w-14 h-14 sm:w-15 sm:h-15 md:w-18 md:h-18 lg:w-18 lg:h-18 object-contain transition-transform duration-300 ease-out hover:scale-110"
+    src={logo}
+  />
+</a>
+
       </div>
 
       {/* Mobile Menu Button */}
@@ -93,7 +94,7 @@ const Navbar = () => {
             mobileMenuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
-           <div className="flex-col mt-28 px-8 space-y-8 font-sans list-none">
+          <div className="flex-col mt-28 px-8 space-y-8 font-sans list-none">
             <li className="text-titleColor font-semibold transition cursor-pointer border-b-2 hover:text-hoverTextColor ">
               <a className="flex gap-4" href="/">
                 {/* SVG for Home */}
@@ -340,27 +341,32 @@ const Navbar = () => {
             <>
               <button onClick={toggleDropdown} className="flex items-center">
                 <img
-                  src={user.picture} // Assuming the profile image URL is in the token
-                  alt="Profile"
-                  className="w-10 h-10 rounded-full cursor-pointer"
+                  src={user.picture || "/default-avatar.png"} // Ensure there's a default image
+                  alt="User profile"
+                  className="w-8 h-8 rounded-full object-cover"
                 />
+                {dropdownOpen ? (
+                  <FaCaretUp className="ml-2 text-titleColor" />
+                ) : (
+                  <FaCaretDown className="ml-2 text-titleColor" />
+                )}
               </button>
+              {/* Dropdown content */}
               {dropdownOpen && (
-                <div className="absolute right-0 mt-2 w-58 bg-white border border-gray-300 rounded-md shadow-lg z-50">
-                  <div className="px-4 py-2 text-sm text-gray-700 font-semibold">
-                    {user.name} <br />
-                    {user.email}
-                  </div>
-                  <a href="/profile" className="block px-4 py-2 text-base text-titleColor hover:bg-gray-100">
-                    Profile
-                  </a>
-                  <button
+                <ul className="absolute right-0 mt-2 w-48 bg-white border border-gray-300 rounded-md shadow-lg transition-opacity z-10">
+                  <li className="block px-4 py-2 text-titleColor cursor-pointer hover:bg-gray-100">
+                    <a href="/profile">Profile</a>
+                  </li>
+                  <li className="block px-4 py-2 text-titleColor cursor-pointer hover:bg-gray-100">
+                    <a href="/settings">Settings</a>
+                  </li>
+                  <li
+                    className="block px-4 py-2 text-titleColor cursor-pointer hover:bg-gray-100"
                     onClick={handleLogout}
-                    className="block w-full text-left px-4 py-2 text-base text-red-600 hover:bg-gray-100"
                   >
                     Logout
-                  </button>
-                </div>
+                  </li>
+                </ul>
               )}
             </>
           ) : (
