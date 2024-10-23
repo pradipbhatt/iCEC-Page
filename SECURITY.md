@@ -2,8 +2,7 @@
 
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+Use this section to inform users about which versions of your project are currently being supported with security updates.
 
 | Version | Supported          |
 | ------- | ------------------ |
@@ -14,8 +13,18 @@ currently being supported with security updates.
 
 ## Reporting a Vulnerability
 
-Use this section to tell people how to report a vulnerability.
+To report a security vulnerability in this project, please follow the steps below:
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+1. **Identify the Vulnerability**: Clearly outline the details of the vulnerability, including how it can be reproduced, potential impact, and any evidence or proof of concept.
+
+2. **Contact Information**: Send your report to [bhattsammar04@gmail.com](mailto:bhattsammar04.com). Alternatively, you may open an issue on the project's GitHub repository, but please note that this may not be the most secure method for sensitive information.
+
+3. **Response Time**: You can expect an acknowledgment of your report within 48 hours. After that, we will assess the vulnerability and prioritize it according to its severity.
+
+4. **Updates**: We aim to provide updates on the status of the reported vulnerability every week until it is resolved or we have determined that no action is required.
+
+5. **Acceptance or Decline**: If the vulnerability is accepted, we will work on a fix and provide details about the patch in the next release. If it is declined, we will inform you of the reasons for this decision.
+
+6. **Confidentiality**: All reports will be treated confidentially and will not be disclosed publicly until the issue has been resolved.
+
+Thank you for helping us maintain the security of our project!

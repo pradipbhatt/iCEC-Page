@@ -1,0 +1,165 @@
+import React, { useState } from "react";
+import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+import { useNavigate } from "react-router-dom";
+import {
+  GoogleAuthProvider,
+  GithubAuthProvider,
+  FacebookAuthProvider,
+  signInWithPopup,
+  auth
+} from "../../../firebaseConfig"; // Ensure these are imported from your firebase setup
+import { FaGoogle, FaGithub, FaFacebook, FaEnvelope, FaLock } from 'react-icons/fa';
+import { Spinner } from 'react-bootstrap'; // Import Spinner
+
+const Login = () => {
+  const navigate = useNavigate();
+  const [loading, setLoading] = useState(false);
+  const [buttonDisabled, setButtonDisabled] = useState(false);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const validateInputs = () => email && password;
+
+  const handleSignIn = async (event) => {
+    event.preventDefault();
+    setLoading(true);
+    setButtonDisabled(true);
+    
+    // Validate inputs before proceeding
+    if (!validateInputs()) {
+      toast.error("Please fill in all fields.");
+      setLoading(false);
+      setButtonDisabled(false);
+      return; // Exit if validation fails
+    }
+  
+    try {
+      const res = await axios.post("https://icec.onrender.com/api/users/login", {
+        email,
+        password,
+      });
+  
+      // Store token and user data in localStorage
+      localStorage.setItem("token", res.data.token);
+      localStorage.setItem("user", JSON.stringify(res.data.user));
+  
+      // Show success message and navigate to homepage
+      toast.success("Login successful!");
+      navigate("/"); 
+    } catch (err) {
+      // Handle error messages and show toast
+      const errorMessage = err.response?.data?.message || "Login failed! Please check your credentials.";
+      toast.error(errorMessage);
+    } finally {
+      // Reset loading and button state
+      setLoading(false);
+      setButtonDisabled(false);
+    }
+  };
+  
+
+  const handleSocialSignIn = async (provider) => {
+    try {
+      const result = await signInWithPopup(auth, provider);
+      toast.success(`${provider.providerId} Sign-in successful!`);
+      localStorage.setItem('token', result.user.accessToken);
+      window.location.reload();
+    } catch (error) {
+      toast.error(`${provider.providerId} Sign-in failed!`);
+    }
+  };
+
+  return (
+    <section className="vh-100 d-flex flex-column justify-content-between bg-light">
+      <div className="container-fluid h-custom">
+        <div className="row d-flex justify-content-center align-items-center h-100 fade-in">
+          <div className="col-md-9 col-lg-6 col-xl-5 mb-4">
+            <img 
+              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp" 
+              className="img-fluid fade-in rounded" 
+              alt="Sample" 
+            />
+          </div>
+          <div className="col-md-8 col-lg-6 col-xl-4 offset-xl-1 fade-in">
+            <h2 className="text-xl my-4 text-center fw-bold text-titleColor">Login</h2>
+            <form onSubmit={handleSignIn} className="px-3">
+              {/* Email input */}
+              <div className="form-outline mb-4">
+                <label htmlFor="email" className="form-label fw-bold">Email address</label>
+                <div className="input-group">
+                  <span className="input-group-text"><FaEnvelope /></span>
+                  <input 
+                    type="email" 
+                    id="email" 
+                    className={`form-control form-control-lg ${!email ? 'is-invalid' : ''}`} 
+                    placeholder="Enter a valid email address" 
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)} 
+                    required 
+                  />
+                </div>
+                {!email && <div className="invalid-feedback">Email address is required.</div>}
+              </div>
+
+              {/* Password input */}
+              <div className="form-outline mb-3">
+                <label htmlFor="password" className="form-label fw-bold">Password</label>
+                <div className="input-group">
+                  <span className="input-group-text"><FaLock /></span>
+                  <input 
+                    type="password" 
+                    id="password" 
+                    className={`form-control form-control-lg ${!password ? 'is-invalid' : ''}`} 
+                    placeholder="Enter password" 
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)} 
+                    required 
+                  />
+                </div>
+                {!password && <div className="invalid-feedback">Password is required.</div>}
+              </div>
+
+              <div className="d-flex justify-content-between align-items-center">
+                <div className="form-check mb-0">
+                  <input className="form-check-input me-2" type="checkbox" id="rememberMe" />
+                  <label className="form-check-label fw-bold" htmlFor="rememberMe">Remember me</label>
+                </div>
+                <a href="/forgot-password" className="text-body">Forgot password?</a>
+              </div>
+
+              <div className="text-center text-lg-start mt-4 pt-2">
+                <button type="submit" className="btn btn-primary btn-lg w-100" disabled={buttonDisabled}>
+                  {loading ? <Spinner animation="border" size="sm" /> : "Login"}
+                </button>
+                <p className="small fw-bold mt-2 pt-1 mb-0">
+                  Don't have an account? <a href="/registration" className="link-danger">Register</a>
+                </p>
+              </div>
+            </form>
+
+            {/* Sign in with section */}
+            <div className="divider d-flex align-items-center my-4">
+              <p className="text-center fw-bold mx-3 mb-0">Or sign in with</p>
+            </div>
+            <div className="d-flex flex-row align-items-center justify-content-center justify-content-lg-start mb-4">
+              <button type="button" className="btn btn-outline-primary w-100 mx-1" onClick={() => handleSocialSignIn(new GoogleAuthProvider())}>
+                <FaGoogle /> Google
+              </button>
+              <button type="button" className="btn btn-outline-dark w-100 mx-1" onClick={() => handleSocialSignIn(new GithubAuthProvider())}>
+                <FaGithub /> GitHub
+              </button>
+              <button type="button" className="btn btn-outline-primary w-100 mx-1" onClick={() => handleSocialSignIn(new FacebookAuthProvider())}>
+                <FaFacebook /> Facebook
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ToastContainer />
+    </section>
+  );
+};
+
+export default Login;

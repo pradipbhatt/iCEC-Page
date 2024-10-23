@@ -1,0 +1,12 @@
+/* Target all sections or specific elements for hover effect */
+section:hover {
+    text-decoration: underline;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.hover-underline:hover {
+    text-decoration: underline;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease, text-decoration 0.3s ease;
+}

@@ -1,6 +1,8 @@
-// Contact.jsx
 import React from 'react';
 import Footer from './Footer';
+import PradipPhoto from '../assets/pradipPic.png';
+import DipakPhoto from '../assets/dipakPic.jpg';
+import BipeshPhoto from '../assets/bipeshPic.jpeg';
 
 const Contact = () => {
   return (
@@ -17,18 +19,21 @@ const Contact = () => {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                 <div className="col-span-1">
+                  <img src={PradipPhoto} alt="Pradip Bhatt" className="mx-auto rounded-full w-32 h-32 object-cover mb-4" />
                   <h6 className="text-lg font-semibold">Pradip Bhatt</h6>
                   <p className="text-base">Club President</p>
                   <p className="text-base">9810652734</p>
                   <p className="text-base text-gray-600">pradip10bhatt@gmail.com</p>
                 </div>
                 <div className="col-span-1">
+                  <img src={DipakPhoto} alt="Dipak Raj Giri" className="mx-auto rounded-full w-32 h-32 object-cover mb-4" />
                   <h6 className="text-lg font-semibold">Dipak Raj Giri</h6>
                   <p className="text-base">Club Vice President</p>
-                  <p className="text-base">98********</p>
-                  <p className="text-base text-gray-600">giridipak@gmail.com</p>
+                  <p className="text-base">9864311321</p>
+                  <p className="text-base text-gray-600">giridipak743@gmail.com</p>
                 </div>
                 <div className="col-span-1">
+                  <img src={BipeshPhoto} alt="Bipesh Khadka" className="mx-auto rounded-full w-32 h-32 object-cover mb-4" />
                   <h6 className="text-lg font-semibold">Bipesh Khadka</h6>
                   <p className="text-base">General Secretary</p>
                   <p className="text-base">98********</p>
@@ -53,5 +58,4 @@ const Contact = () => {
     </>
   );
 };
-
 export default Contact;

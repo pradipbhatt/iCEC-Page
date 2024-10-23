@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
@@ -10,7 +9,12 @@ import Apply from './components/Apply';
 import Executives from './components/Executives';
 import Advisory from "./components/Advisory";
 import Soeexpress from './components/Soeexpress';
-
+import Testimonial from './components/Testimonial/Testimonial.';
+import Login from './components/Login/Login';
+import Registration from './components/Registration/Registration';
+import ForgotPassword from "./components/ResetPass/ResetPassword";
+import Profile from './components/Profile';
+import './App.css'
 const App = () => {
   return (
     <Router>
@@ -25,6 +29,11 @@ const App = () => {
         <Route path="/advisory-board" element={<Advisory />} />
         <Route path="/soe-express" element={<Soeexpress />} />
         <Route path="/apply" element={<Apply />} />
+        <Route path="/testimonial/" element={<Testimonial/>}/>
+        <Route path="/login" element={<Login/>}/>
+        <Route path="/registration" element={<Registration/>}/>
+        <Route path="/forgot-password" element={<ForgotPassword/>}/>
+        <Route path="/profile" element={<Profile/>}/>
       </Routes>
     </Router>
   );
