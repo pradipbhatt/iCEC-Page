@@ -56,20 +56,20 @@ const Navbar = () => {
     window.location.href = "/login";
   };
 
+  
   return (
     <div className="flex w-full p-4 h-16 md:p-10 justify-between items-center bg-baseBackground z-50">
       {/* Logo Section */}
       <div className="flex-shrink-0">
-      <a className="cursor-pointer" href="/">
-  <img
-    alt="logo"
-    width="84"
-    height="84"
-    className="w-14 h-14 sm:w-15 sm:h-15 md:w-18 md:h-18 lg:w-18 lg:h-18 object-contain transition-transform duration-300 ease-out hover:scale-110"
-    src={logo}
-  />
-</a>
-
+        <a className="cursor-pointer" href="/">
+          <img
+            alt="logo"
+            width="84"
+            height="84"
+            className="w-14 h-14 sm:w-15 sm:h-15 md:w-18 md:h-18 lg:w-18 lg:h-18 object-contain transition-transform duration-300 ease-out hover:scale-110"
+            src={logo}
+          />
+        </a>
       </div>
 
       {/* Mobile Menu Button */}
@@ -276,7 +276,7 @@ const Navbar = () => {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          <button className="text-titleColor font-semibold flex items-center gap-4 hover:text-hoverTextColor transition my-links">
+          <button className="text-titleColor font-semibold flex items-center gap-2 hover:text-hoverTextColor transition my-links">
             Our Team
             <FaCaretDown className="text-titleColor" />
           </button>
@@ -312,7 +312,7 @@ const Navbar = () => {
           onMouseEnter={publicationMouseEnter}
           onMouseLeave={publicationMouseLeave}
         >
-          <button className="text-titleColor font-semibold flex items-center gap-4 hover:text-hoverTextColor transition my-links">
+          <button className="text-titleColor font-semibold flex items-center gap-2 hover:text-hoverTextColor transition my-links">
             Publications
             <FaCaretDown className="text-titleColor" />
           </button>
@@ -337,47 +337,48 @@ const Navbar = () => {
         </a>
         {/* Profile Image Dropdown */}
         <div className="relative">
-          {user ? (
-            <>
-              <button onClick={toggleDropdown} className="flex items-center">
-                <img
-                  src={user.picture || "/default-avatar.png"} // Ensure there's a default image
+  {user ? (
+    <>
+      <button onClick={toggleDropdown} className="flex items-center">
+      <img
+                  src={user.picture || "https://via.placeholder.com/96"} // Use user.picture or a default image
                   alt="User profile"
                   className="w-8 h-8 rounded-full object-cover"
                 />
-                {dropdownOpen ? (
-                  <FaCaretUp className="ml-2 text-titleColor" />
-                ) : (
-                  <FaCaretDown className="ml-2 text-titleColor" />
-                )}
-              </button>
-              {/* Dropdown content */}
-              {dropdownOpen && (
-                <ul className="absolute right-0 mt-2 w-48 bg-white border border-gray-300 rounded-md shadow-lg transition-opacity z-10">
-                  <li className="block px-4 py-2 text-titleColor cursor-pointer hover:bg-gray-100">
-                    <a href="/profile">Profile</a>
-                  </li>
-                  <li className="block px-4 py-2 text-titleColor cursor-pointer hover:bg-gray-100">
-                    <a href="/settings">Settings</a>
-                  </li>
-                  <li
-                    className="block px-4 py-2 text-titleColor cursor-pointer hover:bg-gray-100"
-                    onClick={handleLogout}
-                  >
-                    Logout
-                  </li>
-                </ul>
-              )}
-            </>
-          ) : (
-            <a
-              href="/login"
-              className="text-titleColor font-semibold hover:text-hoverTextColor transition my-links"
-            >
-              Login
-            </a>
-          )}
-        </div>
+        {dropdownOpen ? (
+          <FaCaretUp className="ml-2 text-titleColor" />
+        ) : (
+          <FaCaretDown className="ml-2 text-titleColor" />
+        )}
+      </button>
+      {/* Dropdown content */}
+      {dropdownOpen && (
+        <ul className="absolute right-0 mt-2 w-48 bg-white border border-gray-300 rounded-md shadow-lg transition-opacity z-10">
+          <li className="block px-4 py-2 text-titleColor cursor-pointer hover:bg-gray-100">
+            <a href="/profile">Profile</a>
+          </li>
+          <li className="block px-4 py-2 text-titleColor cursor-pointer hover:bg-gray-100">
+            <a href="/settings">Settings</a>
+          </li>
+          <li
+            className="block px-4 py-2 text-titleColor cursor-pointer hover:bg-gray-100"
+            onClick={handleLogout}
+          >
+            Logout
+          </li>
+        </ul>
+      )}
+    </>
+  ) : (
+    <a
+      href="/login"
+      className="text-titleColor font-semibold hover:text-hoverTextColor transition my-links"
+    >
+      Login
+    </a>
+  )}
+</div>
+
       </div>
     </div>
   );

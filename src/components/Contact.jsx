@@ -36,7 +36,7 @@ const Contact = () => {
                   <img src={BipeshPhoto} alt="Bipesh Khadka" className="mx-auto rounded-full w-32 h-32 object-cover mb-4" />
                   <h6 className="text-lg font-semibold">Bipesh Khadka</h6>
                   <p className="text-base">General Secretary</p>
-                  <p className="text-base">98********</p>
+                  <p className="text-base">9860527707</p>
                   <p className="text-base text-gray-600">bipeshkhadka@gmail.com</p>
                 </div>
               </div>
