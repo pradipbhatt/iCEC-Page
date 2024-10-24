@@ -40,7 +40,7 @@ const Banner = () => {
               students with the skills they need to succeed. Join us for unique
               events each semester and be a part of an exciting journey!
             </p>
-            <a className="flex justify-center md:justify-start" href="/contact">
+            <a className="flex justify-center md:justify-center" href="/contact">
               <Button>Contact Us</Button>
             </a>
           </div>
