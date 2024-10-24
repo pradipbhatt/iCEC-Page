@@ -12,8 +12,10 @@ import Soeexpress from './components/Soeexpress';
 import Testimonial from './components/Testimonial/Testimonial.';
 import Login from './components/Login/Login';
 import Registration from './components/Registration/Registration';
-import ForgotPassword from "./components/ResetPass/ResetPassword"
+import ForgotPassword from "./components/ResetPass/ResetPassword";
+import Profile from './components/Profile';
 import './App.css'
+import PageNotFound from './components/PageNotFound';
 const App = () => {
   return (
     <Router>
@@ -32,6 +34,9 @@ const App = () => {
         <Route path="/login" element={<Login/>}/>
         <Route path="/registration" element={<Registration/>}/>
         <Route path="/forgot-password" element={<ForgotPassword/>}/>
+        <Route path="/profile" element={<Profile/>}/>
+         {/* Add a route for Page Not Found */}
+         <Route path="*" element={<PageNotFound/>} />
       </Routes>
     </Router>
   );

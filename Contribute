@@ -1,0 +1,26 @@
+[Feature Name 1]: Implements a new user login system using OAuth, allowing users to securely log in with third-party accounts (Google, Facebook).
+[Feature Name 2]: Adds a real-time notification system to alert users about new messages or updates.
+[Feature Name 3]: Introduces dark mode, providing a visually appealing option for low-light environments.
+
+Testing Overview:
+- Unit tests cover all utility functions and individual components.
+- Integration tests check interactions between the login system and backend authentication services.
+- End-to-end tests ensure that the new notification system works correctly across different scenarios.
+
+Running Tests:
+To run all tests, execute:
+
+New Features
+OAuth-Based User Login:
+
+Implemented a secure login system using OAuth, allowing users to authenticate via third-party services like Google and Facebook. This simplifies the login process while enhancing security.
+Real-Time Notifications:
+
+Added a notification system that alerts users in real-time about new messages or updates. This feature improves user engagement by keeping them informed instantly.
+Dark Mode:
+
+Introduced a dark mode option for better accessibility and visual comfort in low-light environments. Users can toggle between light and dark themes as needed.
+Testing
+Comprehensive Testing Suite: This PR includes unit tests for individual functions and components, integration tests for feature interactions, and end-to-end tests simulating real-world user scenarios.
+Automated Testing: Tests are automated with the CI pipeline to ensure they run on each commit.
+Coverage: Achieved a high coverage rate across all new features, ensuring that key functionalities are well-tested.

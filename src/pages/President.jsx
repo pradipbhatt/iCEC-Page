@@ -28,7 +28,7 @@ const President = () => {
         </motion.div>
 
         {/* Text Section with Bold Typography */}
-        <div className="flex flex-col items-center md:items-start md:w-2/3 text-center md:text-left">
+        <div className="flex flex-col items-center md:items-center md:w-2/3 text-center md:text-left">
           <motion.h2
             className="text-4xl font-bold text-blue-900 leading-tight mb-5"
             initial={{ opacity: 0, x: -50 }}

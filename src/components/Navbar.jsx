@@ -1,12 +1,26 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import logo from "/logo.png";
 import { FaCaretDown, FaCaretUp, FaTimes } from "react-icons/fa";
+import { jwtDecode } from "jwt-decode";
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [homeDropDown, setHomeDropDown] = useState(false);
   const [publicationDropDown, setPublicationDropDown] = useState(false);
+  const [user, setUser] = useState(null); // State to hold user information
+  const [token, setToken] = useState(localStorage.getItem("token")); // Get token from localStorage
+
+  useEffect(() => {
+    if (token) {
+      try {
+        const decoded = jwtDecode(token); // Decode the JWT token
+        setUser(decoded); // Set user state with decoded token data
+      } catch (error) {
+        console.error("Invalid token:", error);
+      }
+    }
+  }, [token]);
 
   let timeoutId = null;
 
@@ -32,14 +46,17 @@ const Navbar = () => {
     }, 200);
   };
 
-  const toggleDropdown = (index) => {
-    setDropdownOpen(dropdownOpen === index ? null : index);
+  const toggleDropdown = (id) => {
+    setDropdownOpen(dropdownOpen === id ? null : id); // Toggle based on ID
   };
 
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(!mobileMenuOpen);
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    setUser(null);
+    window.location.href = "/login";
   };
 
+  
   return (
     <div className="flex w-full p-4 h-16 md:p-10 justify-between items-center bg-baseBackground z-50">
       {/* Logo Section */}
@@ -49,7 +66,7 @@ const Navbar = () => {
             alt="logo"
             width="84"
             height="84"
-            className="w-16 h-16 sm:w-17 sm:h-17 md:w-20 md:h-20 lg:w-20 lg:h-20 object-contain transition-transform duration-300 ease-out hover:scale-110"
+            className="w-14 h-14 sm:w-15 sm:h-15 md:w-18 md:h-18 lg:w-18 lg:h-18 object-contain transition-transform duration-300 ease-out hover:scale-110"
             src={logo}
           />
         </a>
@@ -59,7 +76,7 @@ const Navbar = () => {
       <div className="flex items-center lg:hidden">
         <button
           className="flex z-50 justify-center relative cursor-pointer items-center p-2 flex-col space-y-1 aspect-square hover:bg-hoverBgColor rounded transition-all outline-none focus:outline-none border-none shadow-none"
-          onClick={toggleMobileMenu}
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? (
             <FaTimes className="w-8 h-8 text-titleColor" />
@@ -238,18 +255,8 @@ const Navbar = () => {
               </a>
             </li>
             <li className="text-titleColor font-semibold transition cursor-pointer border-b-2 hover:text-hoverTextColor">
-              <a className="flex gap-4" href="/testimonial">
-                Testimonial
-              </a>
-            </li>
-            <li className="text-titleColor font-semibold transition cursor-pointer border-b-2 hover:text-hoverTextColor">
               <a className="flex gap-4" href="/login">
                 Login
-              </a>
-            </li>
-            <li className="text-titleColor font-semibold transition cursor-pointer border-b-2 hover:text-hoverTextColor">
-              <a className="flex gap-4" href="/login">
-                Registration
               </a>
             </li>
           </div>
@@ -265,11 +272,11 @@ const Navbar = () => {
           Home
         </a>
         <div
-          className="relative "
+          className="relative"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          <button className="text-titleColor font-semibold flex items-center gap-4 hover:text-hoverTextColor transition my-links">
+          <button className="text-titleColor font-semibold flex items-center gap-2 hover:text-hoverTextColor transition my-links">
             Our Team
             <FaCaretDown className="text-titleColor" />
           </button>
@@ -305,7 +312,7 @@ const Navbar = () => {
           onMouseEnter={publicationMouseEnter}
           onMouseLeave={publicationMouseLeave}
         >
-          <button className="text-titleColor font-semibold flex items-center gap-4 hover:text-hoverTextColor transition my-links">
+          <button className="text-titleColor font-semibold flex items-center gap-2 hover:text-hoverTextColor transition my-links">
             Publications
             <FaCaretDown className="text-titleColor" />
           </button>
@@ -328,21 +335,50 @@ const Navbar = () => {
         >
           Contact
         </a>
-        {/* <a href="/apply" className="text-titleColor font-semibold hover:text-hoverTextColor transition">
-          Apply to be a Member
-        </a> */}
-        {/* <a href="/testimonial" className="text-titleColor font-semibold hover:text-hoverTextColor transition">
-          Testimonial
-        </a> */}
-        <a
-          href="/login"
-          className="text-titleColor font-semibold hover:text-hoverTextColor transition my-links"
-        >
-          Login
-        </a>
-        {/* <a href="/registration" className="text-titleColor font-semibold hover:text-hoverTextColor transition">
-      Registration
-        </a> */}
+        {/* Profile Image Dropdown */}
+        <div className="relative">
+  {user ? (
+    <>
+      <button onClick={toggleDropdown} className="flex items-center">
+      <img
+                  src={user.picture || "https://via.placeholder.com/96"} // Use user.picture or a default image
+                  alt="User profile"
+                  className="w-8 h-8 rounded-full object-cover"
+                />
+        {dropdownOpen ? (
+          <FaCaretUp className="ml-2 text-titleColor" />
+        ) : (
+          <FaCaretDown className="ml-2 text-titleColor" />
+        )}
+      </button>
+      {/* Dropdown content */}
+      {dropdownOpen && (
+        <ul className="absolute right-0 mt-2 w-48 bg-white border border-gray-300 rounded-md shadow-lg transition-opacity z-10">
+          <li className="block px-4 py-2 text-titleColor cursor-pointer hover:bg-gray-100">
+            <a href="/profile">Profile</a>
+          </li>
+          <li className="block px-4 py-2 text-titleColor cursor-pointer hover:bg-gray-100">
+            <a href="/settings">Settings</a>
+          </li>
+          <li
+            className="block px-4 py-2 text-titleColor cursor-pointer hover:bg-gray-100"
+            onClick={handleLogout}
+          >
+            Logout
+          </li>
+        </ul>
+      )}
+    </>
+  ) : (
+    <a
+      href="/login"
+      className="text-titleColor font-semibold hover:text-hoverTextColor transition my-links"
+    >
+      Login
+    </a>
+  )}
+</div>
+
       </div>
     </div>
   );
