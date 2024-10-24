@@ -6,21 +6,21 @@ import HarendraSir from "../../../public/harendraSir.jpg";
 
 const testimonials = [
   {
-    name: "Harendra Kalauni",
-    title: "HOD, Far Western University",
+    name: "Er. Harendra Kalauni",
+    title: "HOD, School of Engineering, FWU",
     image: HarendraSir,
     feedback:
       "The ICEC Club embodies the creativity and dedication of our Computer Engineering students. It provides an excellent platform for skill development, fostering collaboration and growth beyond academics.",
   },
   {
-    name: "Kamal Lekhak",
-    title: "Lecturer, FWU",
+    name: "Er. Kamal Lekhak",
+    title: "Lecturer, School of Engineering, FWU",
     image: KamalSir,
     feedback:
       "The ICEC Club is instrumental in bridging theory with practice, creating a supportive environment where students can collaborate and enhance their technical skills effectively.",
   },
   {
-    name: "Rishi Marseni",
+    name: "Er. Rishi Marseni",
     title: "Lecturer, NCIT College",
     image: RishiSir ,
     feedback:
