@@ -6,7 +6,8 @@ import ram from "/ram.jpg"
 import logo from "/logo.png"
 import Dipa from '../assets/dipa.jpg'
 import Dipak from '../assets/dipakPic.jpg'
-
+import adarsh from "/adarsh.jpg"
+import Hema from "/hema.jpg"
 
 const members = [
     {
@@ -61,7 +62,7 @@ const members = [
     {
       name: 'Adarsh Joshi',
       role: 'Tech Lead',
-      imageUrl: 'https://example.com/adarsh.jpg',
+      imageUrl:adarsh,
       linkedinUrl: 'https://github.com/adarshherohoo',
       emailUrl: 'mailto:adarshjoshi@example.com', 
     },
@@ -96,7 +97,7 @@ const members = [
     {
       name: 'Hema Dhami',
       role: 'Member',
-      imageUrl: 'https://example.com/hema.jpg',
+      imageUrl: Hema,
       linkedinUrl: 'https://example.com/hema_social',
       emailUrl: 'mailto:hemadhami@example.com', 
     },
