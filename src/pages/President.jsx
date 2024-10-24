@@ -44,9 +44,9 @@ const President = () => {
             transition={{ duration: 0.8, delay: 0.1 }}
           >
             <strong className="block py-2 text-2xl">
-              Welcome to Innovative Computer Engineering Club (iCEC-FWU)!
+              Welcome to Innovative Computer Engineering Club (ICEC-FWU)!
             </strong>
-            Join us in shaping the future of ICT. Welcome to the iCEC-FWU
+            Join us in shaping the future of ICT. Welcome to the ICEC-FWU
             family!
           </motion.p>
           <motion.p
@@ -56,7 +56,7 @@ const President = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            From 2023, i-CEC-FWU has been at the forefront of ICT development.
+            From 2023, ICEC-FWU has been at the forefront of ICT development.
             We provide a platform for students to explore technology, gain
             industry exposure, and enhance both their technical and soft skills.
           </motion.p>
@@ -67,11 +67,11 @@ const President = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            i-CEC-FWU is more than a club—it&lsquo;s a community where passion
+            ICEC-FWU is more than a club—it&lsquo;s a community where passion
             meets dreams, fostering growth and collaboration among tech
-            enthusiasts. We laugh, we enjoy, and we grow together in i-CEC-FWU.
+            enthusiasts. We laugh, we enjoy, and we grow together in ICEC-FWU.
             We believe in
-            <strong>“i-CEC-FWU for all since 2023”</strong>
+            <strong>“ICEC-FWU for all since 2023”</strong>
           </motion.p>
         </div>
       </div>
