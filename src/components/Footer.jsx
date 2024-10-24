@@ -65,7 +65,7 @@ const Footer = () => {
             {/* Social Icons */}
             <div className="mt-6 flex space-x-4">
               <motion.a 
-                href="https://www.facebook.com/yourpage" 
+                href="https://www.facebook.com/profile.php?id=61551538155008" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-blue-600 hover:text-blue-500 transition-colors duration-300"
@@ -98,7 +98,7 @@ const Footer = () => {
                 <FaInstagram size={24} />
               </motion.a>
               <motion.a 
-                href="https://www.linkedin.com/in/yourprofile" 
+                href="https://www.linkedin.com/in/icec-soe-fwu/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-blue-700 hover:text-blue-600 transition-colors duration-300"
@@ -147,7 +147,7 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="border-t border-gray-300 mt-8 pt-4 text-center">
           <p className="text-sm">
-            © 2024 Innovative Computer Engineering Club (iCEC-FWU). All rights reserved.
+            © 2024 Innovative Computer Engineering Club (ICEC-FWU). All rights reserved.
           </p>
         </div>
       </div>
