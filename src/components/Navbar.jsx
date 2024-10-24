@@ -60,16 +60,15 @@ const Navbar = () => {
     <div className="flex w-full p-4 h-16 md:p-10 justify-between items-center bg-baseBackground z-50">
       {/* Logo Section */}
       <div className="flex-shrink-0">
-      <a className="cursor-pointer" href="/">
-  <img
-    alt="logo"
-    width="84"
-    height="84"
-    className="w-14 h-14 sm:w-15 sm:h-15 md:w-18 md:h-18 lg:w-18 lg:h-18 object-contain transition-transform duration-300 ease-out hover:scale-110"
-    src={logo}
-  />
-</a>
-
+        <a className="cursor-pointer" href="/">
+          <img
+            alt="logo"
+            width="84"
+            height="84"
+            className="w-14 h-14 sm:w-15 sm:h-15 md:w-18 md:h-18 lg:w-18 lg:h-18 object-contain transition-transform duration-300 ease-out hover:scale-110"
+            src={logo}
+          />
+        </a>
       </div>
 
       {/* Mobile Menu Button */}
@@ -276,7 +275,7 @@ const Navbar = () => {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          <button className="text-titleColor font-semibold flex items-center gap-4 hover:text-hoverTextColor transition my-links">
+          <button className="text-titleColor font-semibold flex items-center gap-2 hover:text-hoverTextColor transition my-links">
             Our Team
             <FaCaretDown className="text-titleColor" />
           </button>
@@ -312,7 +311,7 @@ const Navbar = () => {
           onMouseEnter={publicationMouseEnter}
           onMouseLeave={publicationMouseLeave}
         >
-          <button className="text-titleColor font-semibold flex items-center gap-4 hover:text-hoverTextColor transition my-links">
+          <button className="text-titleColor font-semibold flex items-center gap-2 hover:text-hoverTextColor transition my-links">
             Publications
             <FaCaretDown className="text-titleColor" />
           </button>
