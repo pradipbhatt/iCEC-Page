@@ -6,7 +6,8 @@ import ram from "/ram.jpg"
 import logo from "/logo.png"
 import Dipa from '../assets/dipa.jpg'
 import Dipak from '../assets/dipakPic.jpg'
-
+import adarsh from "/adarsh.jpg"
+import Hema from "/hema.jpg"
 
 const members = [
     {
@@ -61,7 +62,7 @@ const members = [
     {
       name: 'Adarsh Joshi',
       role: 'Tech Lead',
-      imageUrl: 'https://example.com/adarsh.jpg',
+      imageUrl:adarsh,
       linkedinUrl: 'https://github.com/adarshherohoo',
       emailUrl: 'mailto:adarshjoshi@example.com', 
     },
@@ -96,7 +97,7 @@ const members = [
     {
       name: 'Hema Dhami',
       role: 'Member',
-      imageUrl: 'https://example.com/hema.jpg',
+      imageUrl: Hema,
       linkedinUrl: 'https://example.com/hema_social',
       emailUrl: 'mailto:hemadhami@example.com', 
     },
@@ -127,20 +128,20 @@ const members = [
 const Executives = () => {
   return (
   <>
- <div className="flex flex-col p-5 justify-center items-center max-w-screen-xl mx-auto rounded-lg text-card-foreground w-full border-2 shadow-lg bg-baseBackground px-4 mt-4 mb-4">
+ <div className="flex flex-col p-1 justify-center items-center max-w-screen-xl mx-auto rounded-lg text-card-foreground w-full border-2 shadow-lg bg-baseBackground px-4 mt-4">
   <div className="flex-col space-y-1.5 p-6">
     <p className="text-gray-500 text-lg">ICEC Board 2024-25</p>
     <h3 className="font-semibold tracking-tight text-titleColor text-2xl md:text-3xl">Executive Committee</h3>
   </div>
 
-  <div className="p-6">
+  <div >
     <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
       {members.map((member, index) => (
         <div
           key={index}
-          className="text-card-foreground border border-titleColor shadow-2xl rounded-3xl p-5 bg-slate-50"
+          className="text-card-foreground border border-titleColor shadow-2xl rounded-3xl p-2 bg-slate-50"
         >
-          <div className="flex-col space-y-1.5 p-6 flex justify-center items-center relative gap-14">
+          <div className="flex-col space-y-1.5 p-6 flex justify-center items-center relative gap-15">
             <img
               alt="logo ICEC"
               loading="lazy"
