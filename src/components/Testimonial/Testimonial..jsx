@@ -1,30 +1,30 @@
 import React from "react";
 import "./Testimonial.css";
+import RishiSir from "../../../public/rishi.jpeg";
+import KamalSir from "../../../public/kamalSir.jpg";
+import HarendraSir from "../../../public/harendraSir.jpg";
 
 const testimonials = [
   {
-    name: "Avinash Kr",
-    title: "Co-Founder at xyz",
-    image:
-      "https://passport-photo.online/images/cms/prepare_lookintothecamera_860144524c.webp?quality=80&format=webp&width=1920",
+    name: "Harendra Kalauni",
+    title: "HOD, Far Western University",
+    image: HarendraSir,
     feedback:
-      "Like this video and ask your questions in the comment section, don't forget to Subscribe Easy Tutorials YouTube channel to watch more videos of website designing, digital marketing and photoshop.",
+      "The ICEC Club embodies the creativity and dedication of our Computer Engineering students. It provides an excellent platform for skill development, fostering collaboration and growth beyond academics.",
   },
   {
-    name: "Bharat Kunal",
-    title: "Manager at xyz",
-    image:
-      "https://studio.bruinlife.com/wp-content/uploads/2024/09/2B8_5802.jpg",
+    name: "Kamal Lekhak",
+    title: "Lecturer, FWU",
+    image: KamalSir,
     feedback:
-      "Like this video and ask your questions in the comment section, don't forget to Subscribe Easy Tutorials YouTube channel to watch more videos of website designing, digital marketing and photoshop.",
+      "The ICEC Club is instrumental in bridging theory with practice, creating a supportive environment where students can collaborate and enhance their technical skills effectively.",
   },
   {
-    name: "Prabhakar D",
-    title: "Founder / CEO at xyz",
-    image:
-      "https://imgcdn.stablediffusionweb.com/2024/5/6/2b1d888a-a22f-49d5-94b2-d9e1fb2c2640.jpg",
+    name: "Rishi Marseni",
+    title: "Lecturer, NCIT College",
+    image: RishiSir ,
     feedback:
-      "Like this video and ask your questions in the comment section, don't forget to Subscribe Easy Tutorials YouTube channel to watch more videos of website designing, digital marketing and photoshop.",
+      "The ICEC Club showcases what passion and teamwork can achieve. Their projects and initiatives inspire learning and growth, encouraging students to explore technology hands-on.",
   },
 ];
 
@@ -32,9 +32,8 @@ const Testimonial = () => {
   return (
     <section className="testimonials animate__animated animate__fadeIn">
       <h2 className="testimonials-title fw-bold">Testimonials</h2>
-      <p className="testimonials-subtitle">
-        Discover insights from industry leaders and subscribe for expert tips on
-        web design, digital marketing, and more.
+      <p className="testimonials-subtitle fw-bold">
+      Voices of Support and Encouragement
       </p>
       <div className="testimonials-container">
         {testimonials.map((testimonial, index) => (
