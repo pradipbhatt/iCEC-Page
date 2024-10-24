@@ -147,7 +147,7 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="border-t border-gray-300 mt-8 pt-4 text-center">
           <p className="text-sm">
-            © 2024 Innovative Computer Engineering Club (iCEC-FWU). All rights reserved.
+            © 2024 Innovative Computer Engineering Club (ICEC-FWU). All rights reserved.
           </p>
         </div>
       </div>
