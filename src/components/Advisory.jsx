@@ -6,30 +6,30 @@ import logo from "/logo.png"
 
 const members = [
   {
-    name: "Dr. Kishan Datta BHATTA",
-    role: "Dean, Faculty of Engineering, Far Western University Nepal",
+    name: "Er. Dr. Kishan Datta Bhatta",
+    role: "Dean, Faculty of Engineering, Far Western University",
     imageUrl: dean,
     linkedinUrl: "https://www.linkedin.com/in/dr-kishan-datta-bhatta-5b232431/",
     emailUrl: "mailto:kishandatta@yahoo.com"
   },
   {
-    name: "Rishi K. Marseni",
-    role: "Professor, Faculty of Engineering, Far Western University Nepal",
+    name: "Er. Rishi K. Marseni",
+    role: "Professor, Nepal College of Information Technology || FWU",
     imageUrl: rishi,
     linkedinUrl: "https:linkedin.com/in/rkmarseni",
     emailUrl: "mailto:rishimarseni@gmail.com"
   }
 
-  // Add more members here
+ 
 ];
 
 const Advisory = () => {
   return (
   <>
- <div className="flex flex-col justify-center items-center max-w-screen-xl mx-auto rounded-lg text-card-foreground w-full border-2 shadow-lg bg-baseBackground px-4 mt-4">
-  <div className="flex-col space-y-1.5 p-4">
+ <div className="flex flex-col justify-center items-center max-w-screen-xl mx-auto rounded-lg text-card-foreground w-full border-2 shadow-lg bg-baseBackground px-4 mt-4 mb-4">
+  <div className="flex-col space-y-1.5 p-5">
     <p className="text-gray-500 text-lg">ICEC Board 2024-25</p>
-    <h3 className="font-semibold tracking-tight text-titleColor text-2xl md:text-3xl">Advisors</h3>
+    <h3 className="font-semibold tracking-tight text-titleColor text-2xl md:text-3xl">Our Advisors</h3>
   </div>
 
   <div>
