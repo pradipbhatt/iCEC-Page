@@ -75,8 +75,8 @@ const Advisory = () => {
               fill="currentColor"
               strokeWidth="0"
               viewBox="0 0 448 512"
-              width="1em"
-              height="1em"
+              width="1.2em"
+              height="1.2em"
               className="text-2xl sm:text-2xl text-blue-500"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -94,8 +94,8 @@ const Advisory = () => {
               fill="currentColor"
               strokeWidth="0"
               viewBox="0 0 24 24"
-              width="1em"
-              height="1em"
+              width="1.2em"
+              height="1.2em"
               className="text-3xl sm:text-3xl text-red-800"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -109,11 +109,19 @@ const Advisory = () => {
   </div>
 </div>
 
-
   <div className="p-6 pt-0 flex justify-center items-center">
-    <h1 className="text-titleColor text-[10px] sm:text-base md:text-xl md:mt-4">
-      Department of Computer Engineering
-    </h1>
+  <div className="w-full text-center my-8 px-4">
+  <h2 className="text-2xl md:text-3xl font-semibold text-titleColor">
+    A Heartfelt Thank You to Our Advisors
+  </h2>
+  <p className="mt-4 text-lg text-gray-600 md:px-24">
+    We are immensely grateful to have such dedicated and experienced advisors guiding us. 
+    Your unwavering support and valuable insights inspire us to aim higher and work harder each day. 
+    Your contributions are instrumental in our success, and we are honored to have you as part of our journey. 
+    Thank you for being the pillars of our growth and helping us shape a brighter future.
+  </p>
+</div>
+
   </div>
 </div>
 
