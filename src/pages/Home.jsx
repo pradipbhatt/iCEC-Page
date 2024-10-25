@@ -8,6 +8,7 @@ import Preloader from "../components/Preloader";
 import Top from "../components/Top";
 import ActivitiesSection from "./ActivitiesSection";
 import Testimonial from "../components/Testimonial/Testimonial.";
+import OurValues from "../components/OurValues";
 
 
 const Home = () => {
@@ -30,6 +31,7 @@ const Home = () => {
       <Banner />
       <Intro />
       <President />
+      <OurValues/>
       <Testimonial/>
       <ActivitiesSection />
       <StatsSection />
