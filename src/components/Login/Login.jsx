@@ -9,15 +9,17 @@ import {
   FacebookAuthProvider,
   signInWithPopup,
   auth,
-} from "../../../firebaseConfig"; // Ensure these are imported from your firebase setup
+} from "../../../firebaseConfig";
 import {
   FaGoogle,
   FaGithub,
   FaFacebook,
   FaEnvelope,
   FaLock,
+  FaEye,
+  FaEyeSlash,
 } from "react-icons/fa";
-import { Spinner } from "react-bootstrap"; // Import Spinner
+import { Spinner } from "react-bootstrap";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -25,6 +27,7 @@ const Login = () => {
   const [buttonDisabled, setButtonDisabled] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false); // State to toggle password visibility
 
   const validateInputs = () => email && password;
 
@@ -33,38 +36,29 @@ const Login = () => {
     setLoading(true);
     setButtonDisabled(true);
 
-    // Validate inputs before proceeding
     if (!validateInputs()) {
       toast.error("Please fill in all fields.");
       setLoading(false);
       setButtonDisabled(false);
-      return; // Exit if validation fails
+      return;
     }
 
     try {
-      const res = await axios.post(
-        "https://icec.onrender.com/api/users/login",
-        {
-          email,
-          password,
-        }
-      );
+      const res = await axios.post("https://icec.onrender.com/api/users/login", {
+        email,
+        password,
+      });
 
-      // Store token and user data in localStorage
       localStorage.setItem("token", res.data.token);
       localStorage.setItem("user", JSON.stringify(res.data.user));
 
-      // Show success message and navigate to homepage
       toast.success("Login successful!");
       navigate("/");
     } catch (err) {
-      // Handle error messages and show toast
       const errorMessage =
-        err.response?.data?.message ||
-        "Login failed! Please check your credentials.";
+        err.response?.data?.message || "Login failed! Please check your credentials.";
       toast.error(errorMessage);
     } finally {
-      // Reset loading and button state
       setLoading(false);
       setButtonDisabled(false);
     }
@@ -109,9 +103,7 @@ const Login = () => {
                   <input
                     type="email"
                     id="email"
-                    className={`form-control form-control-lg ${
-                      !email ? "is-invalid" : ""
-                    }`}
+                    className={`form-control form-control-lg ${!email ? "is-invalid" : ""}`}
                     placeholder="Enter a valid email address"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -135,16 +127,21 @@ const Login = () => {
                     <FaLock />
                   </span>
                   <input
-                    type="password"
+                    type={showPassword ? "text" : "password"}
                     id="password"
-                    className={`form-control form-control-lg ${
-                      !password ? "is-invalid" : ""
-                    }`}
+                    className={`form-control form-control-lg ${!password ? "is-invalid" : ""}`}
                     placeholder="Enter password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     required
                   />
+                  <button
+                    type="button"
+                    className="btn btn-outline-secondary"
+                    onClick={() => setShowPassword(!showPassword)}
+                  >
+                    {showPassword ? <FaEyeSlash /> : <FaEye />}
+                  </button>
                 </div>
                 {!password && (
                   <div className="invalid-feedback">Password is required.</div>
@@ -158,10 +155,7 @@ const Login = () => {
                     type="checkbox"
                     id="rememberMe"
                   />
-                  <label
-                    className="form-check-label fw-bold"
-                    htmlFor="rememberMe"
-                  >
+                  <label className="form-check-label fw-bold" htmlFor="rememberMe">
                     Remember me
                   </label>
                 </div>
@@ -188,33 +182,32 @@ const Login = () => {
             </form>
 
             {/* Sign in with section */}
-<div className="divider d-flex align-items-center my-4">
-  <p className="text-center fw-bold mx-3 mb-0">Or sign in with</p>
-</div>
-<div className="d-flex flex-row align-items-center justify-content-center justify-content-lg-start mb-4">
-  <button
-    type="button"
-    className="btn btn-outline-danger w-100 mx-1 d-flex align-items-center justify-content-center"
-    onClick={() => handleSocialSignIn(new GoogleAuthProvider())}
-  >
-    <FaGoogle className="me-2 fs-4" /> Google
-  </button>
-  <button
-    type="button"
-    className="btn btn-outline-dark w-100 mx-1 d-flex align-items-center justify-content-center"
-    onClick={() => handleSocialSignIn(new GithubAuthProvider())}
-  >
-    <FaGithub className="me-2 fs-4" /> GitHub
-  </button>
-  <button
-    type="button"
-    className="btn btn-outline-primary w-100 mx-1 d-flex align-items-center justify-content-center"
-    onClick={() => handleSocialSignIn(new FacebookAuthProvider())}
-  >
-    <FaFacebook className="me-2 fs-4" /> Facebook
-  </button>
-</div>
-
+            <div className="divider d-flex align-items-center my-4">
+              <p className="text-center fw-bold mx-3 mb-0">Or sign in with</p>
+            </div>
+            <div className="d-flex flex-row align-items-center justify-content-center justify-content-lg-start mb-4">
+              <button
+                type="button"
+                className="btn btn-outline-danger w-100 mx-1 d-flex align-items-center justify-content-center"
+                onClick={() => handleSocialSignIn(new GoogleAuthProvider())}
+              >
+                <FaGoogle className="me-2 fs-4" /> Google
+              </button>
+              <button
+                type="button"
+                className="btn btn-outline-dark w-100 mx-1 d-flex align-items-center justify-content-center"
+                onClick={() => handleSocialSignIn(new GithubAuthProvider())}
+              >
+                <FaGithub className="me-2 fs-4" /> GitHub
+              </button>
+              <button
+                type="button"
+                className="btn btn-outline-primary w-100 mx-1 d-flex align-items-center justify-content-center"
+                onClick={() => handleSocialSignIn(new FacebookAuthProvider())}
+              >
+                <FaFacebook className="me-2 fs-4" /> Facebook
+              </button>
+            </div>
           </div>
         </div>
       </div>
