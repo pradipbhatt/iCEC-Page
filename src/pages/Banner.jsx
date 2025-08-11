@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Button from "../components/Button";
+import logo from "/logo.png"
 
 const Banner = () => {
   return (
@@ -13,7 +14,7 @@ const Banner = () => {
           transition={{ duration: 0.8 }}
         >
           <img
-            src="https://www.soenotes.com/assets/logo-icec-COfn0a5B.png"
+            src={logo}
             alt="ICEC Logo"
             className="object-contain max-w-[250px] md:max-w-[350px] lg:max-w-[400px]"
           />

@@ -50,11 +50,11 @@ const Navbar = () => {
     setDropdownOpen(dropdownOpen === id ? null : id); // Toggle based on ID
   };
 
-  const handleLogout = () => {
-    localStorage.removeItem("token");
-    setUser(null);
-    window.location.href = "/login";
-  };
+  // const handleLogout = () => {
+  //   localStorage.removeItem("token");
+  //   setUser(null);
+  //   window.location.href = "/login";
+  // };
 
   
   return (
@@ -254,11 +254,11 @@ const Navbar = () => {
                 Apply to be a Member
               </a>
             </li>
-            <li className="text-titleColor font-semibold transition cursor-pointer border-b-2 hover:text-hoverTextColor">
+            {/* <li className="text-titleColor font-semibold transition cursor-pointer border-b-2 hover:text-hoverTextColor">
               <a className="flex gap-4" href="/login">
                 Login
               </a>
-            </li>
+            </li> */}
           </div>
         </div>
       </div>
@@ -371,10 +371,10 @@ const Navbar = () => {
     </>
   ) : (
     <a
-      href="/login"
+      href="#"
       className="text-titleColor font-semibold hover:text-hoverTextColor transition my-links"
     >
-      Login
+      Events
     </a>
   )}
 </div>

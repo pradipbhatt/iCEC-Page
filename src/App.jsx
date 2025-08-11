@@ -26,15 +26,26 @@ const App = () => {
         <Route path="/communities" element={<Communities />} />
         <Route path="/publications" element={<Publications />} />
         <Route path="/contact" element={<Contact />} />
+        {/* foe the executive commette */}
         <Route path="/executive-committee" element={<Executives />} />
         <Route path="/advisory-board" element={<Advisory />} />
+
+        {/* soe express */}
         <Route path="/soe-express" element={<Soeexpress />} />
+
+
+
         <Route path="/apply" element={<Apply />} />
-        <Route path="/testimonial/" element={<Testimonial/>}/>
-        <Route path="/login" element={<Login/>}/>
-        <Route path="/registration" element={<Registration/>}/>
-        <Route path="/forgot-password" element={<ForgotPassword/>}/>
-        <Route path="/profile" element={<Profile/>}/>
+
+
+
+        <Route path="/testimonial/" element={<Testimonial />} />
+        
+
+        {/* <Route path="/login" element={<Login/>}/> */}
+        {/* <Route path="/registration" element={<Registration/>}/> */}
+        {/* <Route path="/forgot-password" element={<ForgotPassword/>}/> */}
+        {/* <Route path="/profile" element={<Profile/>}/> */}
          {/* Add a route for Page Not Found */}
          <Route path="*" element={<PageNotFound/>} />
       </Routes>
