@@ -4,13 +4,6 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
 import {
-  GoogleAuthProvider,
-  GithubAuthProvider,
-  FacebookAuthProvider,
-  signInWithPopup,
-  auth,
-} from "../../../firebaseConfig";
-import {
   FaGoogle,
   FaGithub,
   FaFacebook,
