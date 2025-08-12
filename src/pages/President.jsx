@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import pradip from "/pradip.jpg";
+import Babita from "../assets/babita.jpg"
 
 const President = () => {
   return (
@@ -14,7 +14,7 @@ const President = () => {
         >
           <div className="w-64 h-64 md:w-80 md:h-80 bg-gray-100 rounded-full shadow-lg overflow-hidden">
             <img
-              src={pradip}
+              src={Babita}
               alt="President"
               className="w-full h-full object-cover"
             />
@@ -22,7 +22,7 @@ const President = () => {
           <div className="text-center mt-4">
             <p className="text-lg font-semibold text-gray-500">President</p>
             <h3 className="text-2xl font-bold text-blue-900">
-              Mr. Pradip Bhatt
+              Ms. Babita K. Bhatt
             </h3>
           </div>
         </motion.div>
