@@ -9,7 +9,7 @@ const Navbar = () => {
   const [homeDropDown, setHomeDropDown] = useState(false);
   const [publicationDropDown, setPublicationDropDown] = useState(false);
   const [user, setUser] = useState(null); // State to hold user information
-  const [token, setToken] = useState(localStorage.getItem("token")); // Get token from localStorage
+  const [token] = useState(localStorage.getItem("token")); // Get token from localStorage
 
   useEffect(() => {
     if (token) {
@@ -292,6 +292,14 @@ const Navbar = () => {
               </li>
               <li>
                 <a
+                  href="/executive-committee2"
+                  className="block px-4 py-2 text-base text-titleColor hover:bg-gray-100"
+                >
+                  Executive Committee 2nd
+                </a>
+              </li>
+              <li>
+                <a
                   href="/advisory-board"
                   className="block px-4 py-2 text-base text-titleColor hover:bg-gray-100"
                 >
@@ -351,7 +359,7 @@ const Navbar = () => {
           <FaCaretDown className="ml-2 text-titleColor" />
         )}
       </button>
-      {/* Dropdown content */}
+      {/* Dropdown content
       {dropdownOpen && (
         <ul className="absolute right-0 mt-2 w-48 bg-white border border-gray-300 rounded-md shadow-lg transition-opacity z-10">
           <li className="block px-4 py-2 text-titleColor cursor-pointer hover:bg-gray-100">
@@ -367,7 +375,7 @@ const Navbar = () => {
             Logout
           </li>
         </ul>
-      )}
+      )} */}
     </>
   ) : (
     <a
