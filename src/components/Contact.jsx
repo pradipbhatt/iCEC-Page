@@ -1,8 +1,7 @@
-import React from 'react';
 import Footer from './Footer';
-import PradipPhoto from '../assets/pradipPic.png';
-import DipakPhoto from '../assets/dipakPic.jpg';
-import BipeshPhoto from '../assets/bipeshPic.jpeg';
+import Babita from "../assets/babita.jpg"
+import KamalRaj from "../assets/kamal.jpg"
+import Asish from "../assets/asish.jpg"
 
 const Contact = () => {
   return (
@@ -19,25 +18,25 @@ const Contact = () => {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                 <div className="col-span-1">
-                  <img src={PradipPhoto} alt="Pradip Bhatt" className="mx-auto rounded-full w-32 h-32 object-cover mb-4" />
-                  <h6 className="text-lg font-semibold">Pradip Bhatt</h6>
+                  <img src={Babita} alt="Pradip Bhatt" className="mx-auto rounded-full w-32 h-32 object-cover mb-4" />
+                  <h6 className="text-lg font-semibold">Babita Bhatt</h6>
                   <p className="text-base">Club President</p>
                   <p className="text-base">9810652734</p>
-                  <p className="text-base text-gray-600">pradip10bhatt@gmail.com</p>
+                  <p className="text-base text-gray-600">babitabhatt@gmail.com</p>
                 </div>
                 <div className="col-span-1">
-                  <img src={DipakPhoto} alt="Dipak Raj Giri" className="mx-auto rounded-full w-32 h-32 object-cover mb-4" />
-                  <h6 className="text-lg font-semibold">Dipak Raj Giri</h6>
-                  <p className="text-base">Club Vice President</p>
+                  <img src={KamalRaj} alt="Dipak Raj Giri" className="mx-auto rounded-full w-32 h-32 object-cover mb-4" />
+                  <h6 className="text-lg font-semibold">Kamal Raj Giri</h6>
+                  <p className="text-base">General Secretary</p>
                   <p className="text-base">9864311321</p>
                   <p className="text-base text-gray-600">giridipak743@gmail.com</p>
                 </div>
                 <div className="col-span-1">
-                  <img src={BipeshPhoto} alt="Bipesh Khadka" className="mx-auto rounded-full w-32 h-32 object-cover mb-4" />
-                  <h6 className="text-lg font-semibold">Bipesh Khadka</h6>
-                  <p className="text-base">General Secretary</p>
-                  <p className="text-base">9860527707</p>
-                  <p className="text-base text-gray-600">bipeshkhadka@gmail.com</p>
+                  <img src={Asish} alt="Bipesh Khadka" className="mx-auto rounded-full w-32 h-32 object-cover mb-4" />
+                  <h6 className="text-lg font-semibold">Asish Mehata</h6>
+                  <p className="text-base">Tech Lead</p>
+                  <p className="text-base">9868723582</p>
+                  <p className="text-base text-gray-600">asishmehata48@gmail.com</p>
                 </div>
               </div>
             </div>
