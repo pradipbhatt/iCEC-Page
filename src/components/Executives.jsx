@@ -1,4 +1,3 @@
-import React from 'react';
 import Footer from './Footer';
 import dikshya from "/dikshya.jpg"
 import dileep from "/dileep.jpg"
@@ -147,7 +146,7 @@ const Executives = () => {
     <>
       <div className="flex flex-col p-1 justify-center items-center max-w-screen-xl mx-auto rounded-lg text-card-foreground w-full border-2 shadow-lg bg-baseBackground px-4 mt-4">
         <div className="flex-col space-y-1.5 p-6">
-          <p className="text-gray-500 text-lg">ICEC Board 2024-25</p>
+          <p className="text-gray-500 text-lg">ICEC Board 2023-24</p>
           <h3 className="font-semibold tracking-tight text-titleColor text-2xl md:text-3xl">Executive Committee</h3>
         </div>
 

@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import Footer from './Footer';
 import dean from "/dean.jpeg"
 import rishi from "/rishi.jpeg"
