@@ -7,13 +7,14 @@ import Publications from './components/Publications';
 import Contact from './components/Contact';
 import Apply from './components/Apply';
 import Executives from './components/Executives';
+import Executives2 from './components/Executives2';
 import Advisory from "./components/Advisory";
 import Soeexpress from './components/Soeexpress';
 import Testimonial from './components/Testimonial/Testimonial.';
-import Login from './components/Login/Login';
-import Registration from './components/Registration/Registration';
-import ForgotPassword from "./components/ResetPass/ResetPassword";
-import Profile from './components/Profile';
+// import Login from './components/Login/Login';
+// import Registration from './components/Registration/Registration';
+// import ForgotPassword from "./components/ResetPass/ResetPassword";
+// import Profile from './components/Profile';
 import './App.css'
 import PageNotFound from './components/PageNotFound';
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         {/* foe the executive commette */}
         <Route path="/executive-committee" element={<Executives />} />
+        <Route path="/executive-committee2" element={<Executives2 />} />
         <Route path="/advisory-board" element={<Advisory />} />
 
         {/* soe express */}
