@@ -11,6 +11,7 @@ import Executives2 from './components/Executives2';
 import Advisory from "./components/Advisory";
 import Soeexpress from './components/Soeexpress';
 import Testimonial from './components/Testimonial/Testimonial.';
+import Events from './components/Events';
 // import Login from './components/Login/Login';
 // import Registration from './components/Registration/Registration';
 // import ForgotPassword from "./components/ResetPass/ResetPassword";
@@ -42,7 +43,7 @@ const App = () => {
 
 
         <Route path="/testimonial/" element={<Testimonial />} />
-        
+        <Route path = "/events" element={<Events />} />
 
         {/* <Route path="/login" element={<Login/>}/> */}
         {/* <Route path="/registration" element={<Registration/>}/> */}
