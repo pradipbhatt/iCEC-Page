@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { waveform } from 'ldrs';
 
 waveform.register();

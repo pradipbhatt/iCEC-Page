@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaBullseye, FaLightbulb, FaUsers, FaHandsHelping } from 'react-icons/fa'; 
 import logo from "/logo.png"; 
 
