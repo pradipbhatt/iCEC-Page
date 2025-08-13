@@ -1,6 +1,6 @@
 import Footer from './Footer';
 import Babita from "../assets/babita.jpg"
-import KamalRaj from "../assets/kamal.jpg"
+import KamalRaj from "../assets/kamal.jpeg"
 import Asish from "../assets/asish.jpg"
 
 const Contact = () => {
