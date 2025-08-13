@@ -1,26 +1,26 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import logo from "/logo.png";
 import { FaCaretDown, FaCaretUp, FaTimes } from "react-icons/fa";
-import { jwtDecode } from "jwt-decode";
+// import { jwtDecode } from "jwt-decode";
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [homeDropDown, setHomeDropDown] = useState(false);
   const [publicationDropDown, setPublicationDropDown] = useState(false);
-  const [user, setUser] = useState(null); // State to hold user information
-  const [token] = useState(localStorage.getItem("token")); // Get token from localStorage
+  // // const [user, setUser] = useState(null); // State to hold user information
+  // const [token] = useState(localStorage.getItem("token")); // Get token from localStorage
 
-  useEffect(() => {
-    if (token) {
-      try {
-        const decoded = jwtDecode(token); // Decode the JWT token
-        setUser(decoded); // Set user state with decoded token data
-      } catch (error) {
-        console.error("Invalid token:", error);
-      }
-    }
-  }, [token]);
+  // useEffect(() => {
+  //   if (token) {
+  //     try {
+  //       const decoded = jwtDecode(token); // Decode the JWT token
+  //       setUser(decoded); // Set user state with decoded token data
+  //     } catch (error) {
+  //       console.error("Invalid token:", error);
+  //     }
+  //   }
+  // }, [token]);
 
   let timeoutId = null;
 
@@ -344,49 +344,12 @@ const Navbar = () => {
           Contact
         </a>
         {/* Profile Image Dropdown */}
-        <div className="relative">
-  {user ? (
-    <>
-      <button onClick={toggleDropdown} className="flex items-center">
-      <img
-                  src={user.picture || "https://via.placeholder.com/96"} // Use user.picture or a default image
-                  alt="User profile"
-                  className="w-8 h-8 rounded-full object-cover"
-                />
-        {dropdownOpen ? (
-          <FaCaretUp className="ml-2 text-titleColor" />
-        ) : (
-          <FaCaretDown className="ml-2 text-titleColor" />
-        )}
-      </button>
-      {/* Dropdown content
-      {dropdownOpen && (
-        <ul className="absolute right-0 mt-2 w-48 bg-white border border-gray-300 rounded-md shadow-lg transition-opacity z-10">
-          <li className="block px-4 py-2 text-titleColor cursor-pointer hover:bg-gray-100">
-            <a href="/profile">Profile</a>
-          </li>
-          <li className="block px-4 py-2 text-titleColor cursor-pointer hover:bg-gray-100">
-            <a href="/settings">Settings</a>
-          </li>
-          <li
-            className="block px-4 py-2 text-titleColor cursor-pointer hover:bg-gray-100"
-            onClick={handleLogout}
-          >
-            Logout
-          </li>
-        </ul>
-      )} */}
-    </>
-  ) : (
-    <a
-      href="#"
+        <a
+      href="/events"
       className="text-titleColor font-semibold hover:text-hoverTextColor transition my-links"
-    >
-      Events
-    </a>
-  )}
-</div>
-
+      >
+        Events
+      </a>
       </div>
     </div>
   );
