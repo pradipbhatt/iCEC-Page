@@ -169,8 +169,8 @@ const members = [
     name: 'Santosh Luhar',
     role: 'Executive Member',
     imageUrl: Men,
-    linkedinUrl: 'https://github.com/suddhababa',
-    emailUrl: 'mailto:yogeshawasthi@example.com',
+    linkedinUrl: 'https://github.com/',
+    emailUrl: 'mailto:santoshluhar@example.com',
     githubUrl: 'https://github.com/',
   },
 ];
