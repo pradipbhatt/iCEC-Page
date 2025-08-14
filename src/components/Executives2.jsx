@@ -4,15 +4,10 @@ import Footer from './Footer';
 import Babita from "../assets/babita.jpg"
 import Asish from "../assets/asish.jpg"
 import Jelina from "../assets/jelina.jpeg"
-import Sarswati from "../assets/sarswati.jpg"
 import logo from "/logo.png"
 import KamalRaj from "../assets/kamal.jpeg"
-import Ujjal from "../assets/ujjal.jpg"
-import Nitesh from "../assets/nitesh.jpg"
 import Pradeep from "../assets/pradeep.jpeg"
 import Yogesh from "../assets/yogesh.jpg"
-import Tek from "../assets/tek.jpg"
-import Kabita from "../assets/kabita.jpg"
 import Hemant from "../assets/hemu.jpeg"
 import Aarati from "../assets/aarati.jpeg"
 import Men from "../assets/default-man.jpg"
@@ -47,7 +42,7 @@ const members = [
   {
     name: 'Ujjal Singh Mahata',
     role: 'Treasurer',
-    imageUrl: Ujjal,
+    imageUrl: Men,
     linkedinUrl: 'https://www.linkedin.com/in/ujjalmahata02/',
     emailUrl: 'mailto:ujjalmahata439@gmail.com',
     githubUrl: 'https://github.com/ujjalmahata02',
@@ -79,7 +74,7 @@ const members = [
   {
     name: 'Nitesh Joshi',
     role: 'Tech Lead',
-    imageUrl: Nitesh,
+    imageUrl: Men,
     linkedinUrl: 'https://www.linkedin.com/in/niteshjoshi/',
     emailUrl: 'mailto:niteshjoshi010@icloud.com',
     githubUrl: 'https://github.com/niteshh-dev',
@@ -88,7 +83,7 @@ const members = [
   {
     name: 'Sarswati Bhandari',
     role: 'HR Lead',
-    imageUrl: Sarswati,
+    imageUrl: Women,
     linkedinUrl: 'https://linkedin.com/in/',
     emailUrl: 'mailto:adarshjoshi@example.com',
     githubUrl: 'https://github.com/',
@@ -96,7 +91,7 @@ const members = [
     {
     name: 'Tek Raj Bhatt',
     role: 'PR Lead',
-    imageUrl: Tek,
+    imageUrl: Men,
     linkedinUrl: 'https://linkedin.com/feed',
     emailUrl: 'mailto:adarshjoshi@example.com',
     githubUrl: 'https://github.com/',
@@ -104,7 +99,7 @@ const members = [
   {
     name: 'Kabita Chand',
     role: 'Event Organizer',
-    imageUrl: Kabita,
+    imageUrl: Women,
     linkedinUrl: 'https://www.linkedin.com/in/dipa-joshi-548a79233/',
     emailUrl: 'mailto:joshideepa988@gmail.com',
     githubUrl: 'https://github.com/Dipajoshi'
