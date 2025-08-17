@@ -157,6 +157,9 @@ const Navbar = () => {
                   <a href="/executive-committee">Executive Committee</a>
                 </li>
                 <li className="cursor-pointer border-b border-navSubitemBorder text-base hover:text-counterBackground">
+                  <a href="/executive-committee2">Executive Committee 2nd</a>
+                </li>
+                <li className="cursor-pointer border-b border-navSubitemBorder text-base hover:text-counterBackground">
                   <a href="/advisory-board">Advisory Board</a>
                 </li>
               </ul>
