@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import Apply from './components/Apply';
 import Executives from './components/Executives';
 import Executives2 from './components/Executives2';
+import Executives3 from './components/Executives3';
 import Advisory from "./components/Advisory";
 import Soeexpress from './components/Soeexpress';
 import Testimonial from './components/Testimonial/Testimonial.';
@@ -31,6 +32,7 @@ const App = () => {
         {/* foe the executive commette */}
         <Route path="/executive-committee" element={<Executives />} />
         <Route path="/executive-committee2" element={<Executives2 />} />
+        <Route path="/executive-committee3" element={<Executives3 />} />
         <Route path="/advisory-board" element={<Advisory />} />
 
         {/* soe express */}

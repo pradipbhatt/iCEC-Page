@@ -160,6 +160,9 @@ const Navbar = () => {
                   <a href="/executive-committee2">Executive Committee 2nd</a>
                 </li>
                 <li className="cursor-pointer border-b border-navSubitemBorder text-base hover:text-counterBackground">
+                  <a href="/executive-committee3">Executive Committee 3rd</a>
+                </li>
+                <li className="cursor-pointer border-b border-navSubitemBorder text-base hover:text-counterBackground">
                   <a href="/advisory-board">Advisory Board</a>
                 </li>
               </ul>
@@ -299,6 +302,14 @@ const Navbar = () => {
                   className="block px-4 py-2 text-base text-titleColor hover:bg-gray-100"
                 >
                   Executive Committee 2nd
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/executive-committee3"
+                  className="block px-4 py-2 text-base text-titleColor hover:bg-gray-100"
+                >
+                  Executive Committee 3rd
                 </a>
               </li>
               <li>
