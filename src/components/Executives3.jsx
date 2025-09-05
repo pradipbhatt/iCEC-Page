@@ -1,142 +1,179 @@
+// eslint-disable-next-line no-unused-vars
+import React from 'react';
 import Footer from './Footer';
-import logo from "/logo.png"
 import Asish from "../assets/asish.jpg"
 import Jelina from "../assets/jelina.jpeg"
+import logo from "/logo.png"
+import Pradeep from "../assets/pradeep.jpeg"
+import Aarati from "../assets/aarati.jpeg"
 import Men from "../assets/default-man.jpg"
 import Women from "../assets/default-women.jpg"
 
+
 const members = [
   {
-    name: 'Bhupendra Joshi',
+    name: 'Babita Kumari Bhatt',
     role: 'President',
-    imageUrl: Men,
-    linkedinUrl: 'https://www.linkedin.com/in/pradipbhatt1326/',
-    emailUrl: 'mailto:pradip10bhatt',
-    githubUrl: 'https://github.com/pradipbhatt',
+    imageUrl: '',
+    linkedinUrl: 'https://www.linkedin.com/in/babita-bhatt-836722251/',
+    emailUrl: 'mailto:babitabhatt@gmail.com',
+    githubUrl: 'https://github.com/BabitaBhatt2059',
   },
   {
-    name: 'Jelina Bhatt',
-    role: 'Vice President',
-    imageUrl: Jelina,
+    name: 'Sapana Pandey',
+    role: 'Sr. Vice-President',
+    imageUrl: Women,
+    linkedinUrl: 'https://www.linkedin.com/in/dipak-raj-giri-970069234/',
+    emailUrl: 'mailto:giridipak743@gmail.com',
+    githubUrl: 'https://github.com/Dipakrajgiri',
+  },
+    {
+    name: 'Bhupendra Joshi',
+    role: 'Vice-President',
+    imageUrl: Men,
     linkedinUrl: 'https://www.linkedin.com/in/dipak-raj-giri-970069234/',
     emailUrl: 'mailto:giridipak743@gmail.com',
     githubUrl: 'https://github.com/Dipakrajgiri',
   },
   {
-    name: '',
+    name: 'Ujjal Singh Mahata',
     role: 'Treasurer',
-    imageUrl: Women,
-    linkedinUrl: 'https://github.com/kamalrajgiri',
-    emailUrl: 'mailto:kamalrajgiri@example.com',
-    githubUrl: 'https://github.com/',
+    imageUrl: Men,
+    linkedinUrl: 'https://www.linkedin.com/in/ujjalmahata02/',
+    emailUrl: 'mailto:ujjalmahata439@gmail.com',
+    githubUrl: 'https://github.com/ujjalmahata02',
+  },
+  {
+    name: 'Kamal Raj Giri',
+    role: 'General Secretary',
+    imageUrl: KamalRaj,
+    linkedinUrl: 'http://www.linkedin.com/in/kamal-raj-giri-k2087',
+    emailUrl: 'mailto:girikamal2087@gmail.com',
+    githubUrl: 'https://github.com/kamalrajgiri',
+  },
+  {
+    name: 'Jelina Bhatt',
+    role: 'Secretary',
+    imageUrl: Jelina,
+    linkedinUrl: 'https://www.linkedin.com/in/jelinabhatt/  ',
+    emailUrl: 'mailto:jelinabhatt1@gmail.com',
+    githubUrl: 'https://github.com/Jelina-bhatt',
   },
   {
     name: 'Asish Mehata',
-    role: 'General Secretary',
+    role: 'Tech Lead',
     imageUrl: Asish,
-    linkedinUrl: 'https://www.facebook.com/profile.php?id=100075303349545',
-    emailUrl: 'mailto:rambhatta@example.com',
-    githubUrl: 'https://github.com/',
+    linkedinUrl: 'https://www.linkedin.com/in/asishmehata48/',
+    emailUrl: 'mailto:asishmehata48@gmail.com',
+    githubUrl: 'https://github.com/asishmehata48',
   },
   {
-    name: '..',
-    role: 'Secretary',
-    imageUrl: Women,
-    linkedinUrl: 'https://github.com/Bipeshkhadka10',
-    emailUrl: 'mailto:bipeshkhadka@example.com',
-    githubUrl: 'https://github.com/',
-  },
-  {
-    name: '..',
-    role: 'HR Lead',
+    name: 'Nitesh Joshi',
+    role: 'Tech Lead',
     imageUrl: Men,
-    linkedinUrl: 'https://www.linkedin.com/in/saaandyyy0/',
-    emailUrl: 'mailto:santoshupadhyay@example.com',
-    githubUrl: 'https://github.com/santosupadhyay0',
-  },
-  {
-    name: '..',
-    role: 'PR Lead',
-    imageUrl: Women,
-    linkedinUrl: 'https://github.com/Bhupendra143',
-    emailUrl: 'mailto:bhupendra@example.com',
-    githubUrl: 'https://github.com/',
+    linkedinUrl: 'https://www.linkedin.com/in/niteshjoshi/',
+    emailUrl: 'mailto:niteshjoshi010@icloud.com',
+    githubUrl: 'https://github.com/niteshh-dev',
 
   },
   {
-    name: '...',
-    role: 'Tech Lead',
+    name: 'Sarswati Bhandari',
+    role: 'HR Lead',
+    imageUrl: Women,
+    linkedinUrl: 'https://linkedin.com/in/',
+    emailUrl: 'mailto:adarshjoshi@example.com',
+    githubUrl: 'https://github.com/',
+  },
+    {
+    name: 'Tek Raj Bhatt',
+    role: 'PR Lead',
     imageUrl: Men,
-    linkedinUrl: 'https://github.com/adarshherohoo',
+    linkedinUrl: 'https://linkedin.com/feed',
     emailUrl: 'mailto:adarshjoshi@example.com',
     githubUrl: 'https://github.com/',
   },
   {
-    name: '..',
+    name: 'Kabita Chand',
     role: 'Event Organizer',
-    imageUrl: Men,
+    imageUrl: Women,
     linkedinUrl: 'https://www.linkedin.com/in/dipa-joshi-548a79233/',
     emailUrl: 'mailto:joshideepa988@gmail.com',
     githubUrl: 'https://github.com/Dipajoshi'
   },
   {
-    name: 'Hema Dhami',
-    role: 'Member',
-    imageUrl: '',
-    linkedinUrl: 'https://example.com/hema_social',
-    emailUrl: 'mailto:hemadhami@example.com',
+    name: 'Vandana Shahi',
+    role: 'Event Organizer',
+    imageUrl: Women,
+    linkedinUrl: 'https://www.linkedin.com/feed',
+    emailUrl: 'mailto:vandanashahi@example.com',
     githubUrl: 'https://github.com/',
   },
   {
-    name: 'Anuradha Bhatta',
-    role: 'Member',
-    imageUrl: '',
-    linkedinUrl: 'https://github.com/Anubhatta',
-    emailUrl: 'mailto:anuradhabhatta@example.com',
+    name: 'Pradeep Nath',
+    role: 'Event Organizer',
+    imageUrl: Pradeep,
+    linkedinUrl: 'http://www.linkedin.com/in/pradeep-nath-437375316',
+    emailUrl: 'mailto:pradeepnath595@gmail.com',
+    githubUrl: 'https://github.com/PradeepNath01',
+  },
+  {
+    name: 'Yogesh Awasthi',
+    role: 'Executive Member',
+    imageUrl: Yogesh,
+    linkedinUrl: 'https://www.linkedin.com/in/yogesh-awasthi/',
+    emailUrl: 'mailto:yogesh@example.com',
+    githubUrl: 'https://github.com/yogeshawasthi',
+  },
+  {
+    name: 'Hemant Lekhak',
+    role: 'Executive Member',
+    imageUrl: Hemant,
+    linkedinUrl: 'https://www.linkedin.com/in/hemant-lekhak-76953b320',
+    emailUrl: 'mailto:lekhakhemant1@gmail.com',
+    githubUrl: 'https://github.com/Hemant-lekhak1',
+  },
+  {
+    name: 'Hemlata Joshi',
+    role: 'Executive Member',
+    imageUrl: Women,
+    linkedinUrl: 'https://www.linkedin.com/feed',
+    emailUrl: 'mailto:hemlata@example.com',
     githubUrl: 'https://github.com/',
   },
   {
-    name: 'Babita Bhatta',
-    role: 'Member',
-    imageUrl: '',
-    linkedinUrl: 'https://github.com/BabitaBhatt2059',
-    emailUrl: 'mailto:babitabhatta@example.com',
+    name: 'Pooja Bhatt',
+    role: 'Executive Member',
+    imageUrl: Women,
+    linkedinUrl: 'https://www.linkedin.com/feed',
+    emailUrl: 'mailto:poojabhatt@example.com',
     githubUrl: 'https://github.com/',
   },
   {
-    name: 'Upcoming star',
-    role: 'Member',
-    imageUrl: 'https://avatars.githubusercontent.com/u/121468998?v=4',
-    linkedinUrl: 'https://github.com/suddhababa',
-    emailUrl: 'mailto:yogeshawasthi@example.com',
-    githubUrl: 'https://github.com/',
+    name: 'Aarati Bhatt',
+    role: 'Executive Member',
+    imageUrl: Aarati,
+    linkedinUrl: 'https://www.linkedin.com/in/aarati-bhatt-850334340',
+    emailUrl: 'mailto:aaratib424@gmail.com',
+    githubUrl: 'https://github.com/aaratibhatt1234',
   },
     {
-    name: 'Upcoming Star',
-    role: 'Member',
-    imageUrl: '',
-    linkedinUrl: 'https://github.com/BabitaBhatt2059',
-    emailUrl: 'mailto:babitabhatta@example.com',
-    githubUrl: 'https://github.com/',
-  },
-  {
-    name: ' Upcoming star',
-    role: 'Member',
-    imageUrl: '.',
-    linkedinUrl: 'https://github.com/suddhababa',
-    emailUrl: 'mailto:yogeshawasthi@example.com',
+    name: 'Santosh Luhar',
+    role: 'Executive Member',
+    imageUrl: Men,
+    linkedinUrl: 'https://github.com/',
+    emailUrl: 'mailto:santoshluhar@example.com',
     githubUrl: 'https://github.com/',
   },
 ];
 
 
-const Executives3 = () => {
+const Executives2 = () => {
   return (
     <>
       <div className="flex flex-col p-1 justify-center items-center max-w-screen-xl mx-auto rounded-lg text-card-foreground w-full border-2 shadow-lg bg-baseBackground px-4 mt-4">
         <div className="flex-col space-y-1.5 p-6">
-          <p className="text-gray-500 text-lg">ICEC Board 2023-24</p>
-          <h3 className="font-semibold tracking-tight text-titleColor text-2xl md:text-3xl">Executive Committee</h3>
+          <p className="text-gray-500 text-lg">ICEC Board 2024-25</p>
+          <h3 className="font-semibold tracking-tight text-titleColor text-2xl md:text-3xl">Executive Committee 2nd</h3>
         </div>
 
         <div >
@@ -251,4 +288,4 @@ const Executives3 = () => {
   );
 };
 
-export default Executives3;
+export default Executives2;
