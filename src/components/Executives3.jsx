@@ -4,7 +4,6 @@ import Footer from './Footer';
 import Asish from "../assets/asish.jpg"
 import Jelina from "../assets/jelina.jpeg"
 import logo from "/logo.png"
-import Pradeep from "../assets/pradeep.jpeg"
 import Aarati from "../assets/aarati.jpeg"
 import Men from "../assets/default-man.jpg"
 import Women from "../assets/default-women.jpg"
@@ -12,7 +11,7 @@ import Women from "../assets/default-women.jpg"
 
 const members = [
   {
-    name: 'Babita Kumari Bhatt',
+    name: 'Bhupendra Joshi',
     role: 'President',
     imageUrl: '',
     linkedinUrl: 'https://www.linkedin.com/in/babita-bhatt-836722251/',
@@ -20,7 +19,7 @@ const members = [
     githubUrl: 'https://github.com/BabitaBhatt2059',
   },
   {
-    name: 'Sapana Pandey',
+    name: '',
     role: 'Sr. Vice-President',
     imageUrl: Women,
     linkedinUrl: 'https://www.linkedin.com/in/dipak-raj-giri-970069234/',
@@ -28,7 +27,7 @@ const members = [
     githubUrl: 'https://github.com/Dipakrajgiri',
   },
     {
-    name: 'Bhupendra Joshi',
+    name: 'Dammar Raj Joshi',
     role: 'Vice-President',
     imageUrl: Men,
     linkedinUrl: 'https://www.linkedin.com/in/dipak-raj-giri-970069234/',
@@ -36,7 +35,7 @@ const members = [
     githubUrl: 'https://github.com/Dipakrajgiri',
   },
   {
-    name: 'Ujjal Singh Mahata',
+    name: 'Prashant Saud',
     role: 'Treasurer',
     imageUrl: Men,
     linkedinUrl: 'https://www.linkedin.com/in/ujjalmahata02/',
@@ -44,25 +43,25 @@ const members = [
     githubUrl: 'https://github.com/ujjalmahata02',
   },
   {
-    name: 'Kamal Raj Giri',
+    name: 'Ujjal Singh Mahata',
     role: 'General Secretary',
-    imageUrl: KamalRaj,
+    imageUrl: '',
     linkedinUrl: 'http://www.linkedin.com/in/kamal-raj-giri-k2087',
     emailUrl: 'mailto:girikamal2087@gmail.com',
     githubUrl: 'https://github.com/kamalrajgiri',
   },
   {
-    name: 'Jelina Bhatt',
+    name: 'Apekshya Bogati',
     role: 'Secretary',
-    imageUrl: Jelina,
+    imageUrl: '',
     linkedinUrl: 'https://www.linkedin.com/in/jelinabhatt/  ',
     emailUrl: 'mailto:jelinabhatt1@gmail.com',
     githubUrl: 'https://github.com/Jelina-bhatt',
   },
   {
-    name: 'Asish Mehata',
+    name: '',
     role: 'Tech Lead',
-    imageUrl: Asish,
+    imageUrl: '',
     linkedinUrl: 'https://www.linkedin.com/in/asishmehata48/',
     emailUrl: 'mailto:asishmehata48@gmail.com',
     githubUrl: 'https://github.com/asishmehata48',
@@ -77,15 +76,23 @@ const members = [
 
   },
   {
-    name: 'Sarswati Bhandari',
-    role: 'HR Lead',
+    name: 'Prabin Bhatt',
+    role: 'Tech Lead',
     imageUrl: Women,
     linkedinUrl: 'https://linkedin.com/in/',
     emailUrl: 'mailto:adarshjoshi@example.com',
     githubUrl: 'https://github.com/',
   },
-    {
-    name: 'Tek Raj Bhatt',
+  {
+    name: 'Nisha Saud',
+    role: 'HR Lead',
+    imageUrl: Women,
+    linkedinUrl: 'https://linkedin.com/feed',
+    emailUrl: 'mailto:adarshjoshi@example.com',
+    githubUrl: 'https://github.com/',
+  },
+  {
+    name: '',
     role: 'PR Lead',
     imageUrl: Men,
     linkedinUrl: 'https://linkedin.com/feed',
@@ -93,71 +100,79 @@ const members = [
     githubUrl: 'https://github.com/',
   },
   {
-    name: 'Kabita Chand',
+    name: 'Sunil Joshi',
     role: 'Event Organizer',
-    imageUrl: Women,
+    imageUrl: Men,
     linkedinUrl: 'https://www.linkedin.com/in/dipa-joshi-548a79233/',
     emailUrl: 'mailto:joshideepa988@gmail.com',
     githubUrl: 'https://github.com/Dipajoshi'
   },
   {
-    name: 'Vandana Shahi',
+    name: 'Mohit Bhatt',
     role: 'Event Organizer',
-    imageUrl: Women,
+    imageUrl: Men,
     linkedinUrl: 'https://www.linkedin.com/feed',
     emailUrl: 'mailto:vandanashahi@example.com',
     githubUrl: 'https://github.com/',
   },
   {
-    name: 'Pradeep Nath',
+    name: 'Sambidha Airee',
     role: 'Event Organizer',
-    imageUrl: Pradeep,
+    imageUrl: Women,
     linkedinUrl: 'http://www.linkedin.com/in/pradeep-nath-437375316',
     emailUrl: 'mailto:pradeepnath595@gmail.com',
     githubUrl: 'https://github.com/PradeepNath01',
   },
   {
-    name: 'Yogesh Awasthi',
+    name: 'Aarati Bhatt',
+    role: 'Social Media Handler',
+    imageUrl: Aarati,
+    linkedinUrl: 'http://www.linkedin.com/in/pradeep-nath-437375316',
+    emailUrl: 'mailto:pradeepnath595@gmail.com',
+    githubUrl: 'https://github.com/PradeepNath01',
+  },
+  {
+    name: '',
     role: 'Executive Member',
-    imageUrl: Yogesh,
+    imageUrl: '',
     linkedinUrl: 'https://www.linkedin.com/in/yogesh-awasthi/',
     emailUrl: 'mailto:yogesh@example.com',
     githubUrl: 'https://github.com/yogeshawasthi',
   },
   {
-    name: 'Hemant Lekhak',
+    name: '',
     role: 'Executive Member',
-    imageUrl: Hemant,
+    imageUrl: Men,
     linkedinUrl: 'https://www.linkedin.com/in/hemant-lekhak-76953b320',
     emailUrl: 'mailto:lekhakhemant1@gmail.com',
     githubUrl: 'https://github.com/Hemant-lekhak1',
   },
   {
-    name: 'Hemlata Joshi',
+    name: 'Asish Mehata',
     role: 'Executive Member',
-    imageUrl: Women,
+    imageUrl: Asish,
     linkedinUrl: 'https://www.linkedin.com/feed',
     emailUrl: 'mailto:hemlata@example.com',
     githubUrl: 'https://github.com/',
   },
   {
-    name: 'Pooja Bhatt',
+    name: 'Jelina Bhatt',
     role: 'Executive Member',
-    imageUrl: Women,
+    imageUrl: Jelina,
     linkedinUrl: 'https://www.linkedin.com/feed',
     emailUrl: 'mailto:poojabhatt@example.com',
     githubUrl: 'https://github.com/',
   },
   {
-    name: 'Aarati Bhatt',
+    name: 'Brijala Pandey',
     role: 'Executive Member',
-    imageUrl: Aarati,
+    imageUrl: Women,
     linkedinUrl: 'https://www.linkedin.com/in/aarati-bhatt-850334340',
     emailUrl: 'mailto:aaratib424@gmail.com',
     githubUrl: 'https://github.com/aaratibhatt1234',
   },
     {
-    name: 'Santosh Luhar',
+    name: '',
     role: 'Executive Member',
     imageUrl: Men,
     linkedinUrl: 'https://github.com/',
@@ -167,7 +182,7 @@ const members = [
 ];
 
 
-const Executives2 = () => {
+const Executives3 = () => {
   return (
     <>
       <div className="flex flex-col p-1 justify-center items-center max-w-screen-xl mx-auto rounded-lg text-card-foreground w-full border-2 shadow-lg bg-baseBackground px-4 mt-4">
@@ -288,4 +303,4 @@ const Executives2 = () => {
   );
 };
 
-export default Executives2;
+export default Executives3;
