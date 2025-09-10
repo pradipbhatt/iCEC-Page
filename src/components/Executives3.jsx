@@ -7,6 +7,7 @@ import logo from "/logo.png"
 import Aarati from "../assets/aarati.jpeg"
 import Men from "../assets/default-man.jpg"
 import Women from "../assets/default-women.jpg"
+import Bikash from "../assets/bikash.jpeg"
 
 
 const members = [
@@ -166,10 +167,10 @@ const members = [
   {
     name: 'Bikash Nepali',
     role: 'Executive Member',
-    imageUrl: Men,
-    linkedinUrl: 'https://www.linkedin.com/in/aarati-bhatt-850334340',
-    emailUrl: 'mailto:aaratib424@gmail.com',
-    githubUrl: 'https://github.com/aaratibhatt1234',
+    imageUrl: Bikash,
+    linkedinUrl: 'https://www.linkedin.com/in/bikash-nepali-5b57b2340',
+    emailUrl: 'mailto:nepalibikash225@gmail.com',
+    githubUrl: 'https://github.com/BIKASH-NEPALI',
   },
     {
     name: 'Brijala Pandey',
