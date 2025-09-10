@@ -8,21 +8,24 @@ import Aarati from "../assets/aarati.jpeg"
 import Men from "../assets/default-man.jpg"
 import Women from "../assets/default-women.jpg"
 import Bikash from "../assets/bikash.jpeg"
+import Dammar from "../assets/dammar.jpeg"
+import Neesa from "../assets/Neesa.jpg"
+import Prabin from "../assets/prabin.jpeg"
 
 
 const members = [
   {
     name: 'Bhupendra Joshi',
     role: 'President',
-    imageUrl: '',
-    linkedinUrl: 'https://www.linkedin.com/in/babita-bhatt-836722251/',
-    emailUrl: 'mailto:babitabhatt@gmail.com',
-    githubUrl: 'https://github.com/BabitaBhatt2059',
+    imageUrl: 'https://avatars.githubusercontent.com/u/121709397?v=4',
+    linkedinUrl: 'in/bhupendra-joshi-b56092245',
+    emailUrl: 'mailto:bhupendrajoshi425@gmail.com',
+    githubUrl: 'https://github.com/Bhupendra143',
   },
   {
     name: 'Sunil Joshi',
     role: 'Sr. Vice-President',
-    imageUrl: Women,
+    imageUrl: Men,
     linkedinUrl: 'https://www.linkedin.com/in/dipak-raj-giri-970069234/',
     emailUrl: 'mailto:giridipak743@gmail.com',
     githubUrl: 'https://github.com/Dipakrajgiri',
@@ -30,18 +33,10 @@ const members = [
     {
     name: 'Dammar Raj Joshi',
     role: 'Vice-President',
-    imageUrl: Men,
-    linkedinUrl: 'https://www.linkedin.com/in/dipak-raj-giri-970069234/',
-    emailUrl: 'mailto:giridipak743@gmail.com',
-    githubUrl: 'https://github.com/Dipakrajgiri',
-  },
-  {
-    name: 'Prashant Saud',
-    role: 'Treasurer',
-    imageUrl: Men,
-    linkedinUrl: 'https://www.linkedin.com/in/ujjalmahata02/',
-    emailUrl: 'mailto:ujjalmahata439@gmail.com',
-    githubUrl: 'https://github.com/ujjalmahata02',
+    imageUrl: Dammar,
+    linkedinUrl: 'https://www.linkedin.com/in/dammar-raj-joshi-43417a358',
+    emailUrl: 'mailto:dammarjoshi132@gmail.com',
+    githubUrl: 'https://github.com/DJXI',
   },
   {
     name: 'Asish Mehata',
@@ -54,10 +49,18 @@ const members = [
   {
     name: 'Apekshya Bogati',
     role: 'Secretary',
-    imageUrl: '',
+    imageUrl: Women,
     linkedinUrl: 'https://www.linkedin.com/in/jelinabhatt/  ',
     emailUrl: 'mailto:jelinabhatt1@gmail.com',
     githubUrl: 'https://github.com/Jelina-bhatt',
+  },
+    {
+    name: 'Prashant Saud',
+    role: 'Treasurer',
+    imageUrl: Men,
+    linkedinUrl: 'https://www.linkedin.com/in/ujjalmahata02/',
+    emailUrl: 'mailto:ujjalmahata439@gmail.com',
+    githubUrl: 'https://github.com/ujjalmahata02',
   },
   {
     name: 'Aashutosh Kalauni',
@@ -70,7 +73,7 @@ const members = [
   {
     name: 'Nitesh Joshi',
     role: 'Tech Lead',
-    imageUrl: Men,
+    imageUrl: 'https://avatars.githubusercontent.com/u/157809884?v=4',
     linkedinUrl: 'https://www.linkedin.com/in/niteshjoshi/',
     emailUrl: 'mailto:niteshjoshi010@icloud.com',
     githubUrl: 'https://github.com/niteshh-dev',
@@ -79,18 +82,18 @@ const members = [
   {
     name: 'Prabin Bhatt',
     role: 'Tech Lead',
-    imageUrl: Women,
-    linkedinUrl: 'https://linkedin.com/in/',
-    emailUrl: 'mailto:adarshjoshi@example.com',
-    githubUrl: 'https://github.com/',
+    imageUrl: Prabin,
+    linkedinUrl: 'https://www.linkedin.com/in/prabin-bhatt-054022341/',
+    emailUrl: 'mailto:bhattsamir2062@gmail.com',
+    githubUrl: 'https://github.com/prabinbhatt08',
   },
   {
     name: 'Nisha Saud',
     role: 'HR Lead',
-    imageUrl: Women,
-    linkedinUrl: 'https://linkedin.com/feed',
-    emailUrl: 'mailto:adarshjoshi@example.com',
-    githubUrl: 'https://github.com/',
+    imageUrl: Neesa,
+    linkedinUrl: 'https://www.linkedin.com/in/nisha-saud-6196a22b7',
+    emailUrl: 'mailto:nishasaud2061@gmail.com',
+    githubUrl: 'https://github.com/Neesa-Saud',
   },
   {
     name: 'Govind Raj Pandey',
@@ -99,6 +102,14 @@ const members = [
     linkedinUrl: 'https://linkedin.com/feed',
     emailUrl: 'mailto:adarshjoshi@example.com',
     githubUrl: 'https://github.com/',
+  },
+    {
+    name: 'Aarati Bhatt',
+    role: 'Social Media Handler',
+    imageUrl: Aarati,
+    linkedinUrl: 'https://www.linkedin.com/in/aarati-bhatt-850334340',
+    emailUrl: 'mailto:aaratib424@gmail.com',
+    githubUrl: 'https://github.com/aaratibhatt1234',
   },
   {
     name: 'Bishal Mahar',
@@ -125,14 +136,6 @@ const members = [
     githubUrl: 'https://github.com/PradeepNath01',
   },
   {
-    name: 'Aarati Bhatt',
-    role: 'Social Media Handler',
-    imageUrl: Aarati,
-    linkedinUrl: 'http://www.linkedin.com/in/pradeep-nath-437375316',
-    emailUrl: 'mailto:pradeepnath595@gmail.com',
-    githubUrl: 'https://github.com/PradeepNath01',
-  },
-  {
     name: 'Bhawana Karki',
     role: 'Executive Member',
     imageUrl: '',
@@ -152,17 +155,17 @@ const members = [
     name: 'Jelina Bhatt',
     role: 'Executive Member',
     imageUrl: Jelina,
-    linkedinUrl: 'https://www.linkedin.com/feed',
-    emailUrl: 'mailto:hemlata@example.com',
-    githubUrl: 'https://github.com/',
+    linkedinUrl: 'https://www.linkedin.com/in/jelina-bhatt-2384472b4/',
+    emailUrl: 'mailto:jelinabhatt1@gmail.com',
+    githubUrl: 'https://github.com/Jelina-bhatt',
   },
   {
     name: 'Ujjal Singh Mahata',
     role: 'Executive Member',
-    imageUrl: '',
-    linkedinUrl: 'https://www.linkedin.com/feed',
-    emailUrl: 'mailto:poojabhatt@example.com',
-    githubUrl: 'https://github.com/',
+    imageUrl: 'https://avatars.githubusercontent.com/u/176055017?v=4',
+    linkedinUrl: 'https://www.linkedin.com/ujjalmahata02',
+    emailUrl: 'mailto:ujjalmahata439@gmail.com',
+    githubUrl: 'https://github.com/ujjalmahata02',
   },
   {
     name: 'Bikash Nepali',
@@ -178,7 +181,7 @@ const members = [
     imageUrl: Women,
     linkedinUrl: 'https://github.com/',
     emailUrl: 'mailto:santoshluhar@example.com',
-    githubUrl: 'https://github.com/',
+    githubUrl: 'https://github.com/brijalaa',
   },
 ];
 

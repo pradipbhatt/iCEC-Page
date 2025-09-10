@@ -154,13 +154,13 @@ const Navbar = () => {
                 } overflow-hidden`}
               >
                 <li className="cursor-pointer border-b border-navSubitemBorder text-base hover:text-counterBackground">
-                  <a href="/executive-committee">Executive Committee</a>
+                  <a href="/executive-committee3">Executive Committee</a>
                 </li>
                 <li className="cursor-pointer border-b border-navSubitemBorder text-base hover:text-counterBackground">
-                  <a href="/executive-committee2">Executive Committee 2nd</a>
+                  <a href="/executive-committee">Executive Committee I</a>
                 </li>
                 <li className="cursor-pointer border-b border-navSubitemBorder text-base hover:text-counterBackground">
-                  <a href="/executive-committee3">Executive Committee 3rd</a>
+                  <a href="/executive-committee2">Executive Committee II</a>
                 </li>
                 <li className="cursor-pointer border-b border-navSubitemBorder text-base hover:text-counterBackground">
                   <a href="/advisory-board">Advisory Board</a>
@@ -290,7 +290,7 @@ const Navbar = () => {
             <ul className="absolute right-0 mt-2 w-48 bg-white border block border-gray-300 rounded-md shadow-lg transition-opacity z-10">
               <li>
                 <a
-                  href="/executive-committee"
+                  href="/executive-committee3"
                   className="block px-4 py-2 text-base text-titleColor hover:bg-gray-100"
                 >
                   Executive Committee
@@ -298,18 +298,18 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="/executive-committee2"
+                  href="/executive-committee"
                   className="block px-4 py-2 text-base text-titleColor hover:bg-gray-100"
                 >
-                  Executive Committee 2nd
+                  Executive Committee I
                 </a>
               </li>
               <li>
                 <a
-                  href="/executive-committee3"
+                  href="/executive-committee2"
                   className="block px-4 py-2 text-base text-titleColor hover:bg-gray-100"
                 >
-                  Executive Committee 3rd
+                  Executive Committee II
                 </a>
               </li>
               <li>
