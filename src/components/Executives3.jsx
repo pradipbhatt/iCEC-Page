@@ -2,22 +2,32 @@
 import React from 'react';
 import Footer from './Footer';
 import Asish from "../assets/asish.jpg"
-import Jelina from "../assets/jelina.jpeg"
+import Jelu from "../assets/Jelu.jpg"
 import logo from "/logo.png"
 import Aarati from "../assets/aarati.jpeg"
-import Men from "../assets/default-man.jpg"
-import Women from "../assets/default-women.jpg"
+import Brijala from "../assets/brijala.jpeg"
 import Bikash from "../assets/bikash.jpeg"
 import Dammar from "../assets/dammar.jpeg"
 import Neesa from "../assets/Neesa.jpg"
 import Prabin from "../assets/prabin.jpeg"
-
+import Sunil from "../assets/sunil.png"
+import Apekshya from "../assets/apekshya.jpeg"
+import Bishal from "../assets/Bishal.png"
+import Aashutosh from "../assets/aashutosh.png"
+import Bhawana from "../assets/bhawana.png"
+import Bhupendra from "../assets/bhupendra.png"
+import Ram from "../assets/ram.png"
+import Prashant from "../assets/prashant.jpg"
+import Ujjal from "../assets/ujjal.jpg"
+import Govind from "../assets/govind.png"
+import Mohit from "../assets/mohit.jpeg"
+import Sambidha from "../assets/sambidha.jpeg"
 
 const members = [
   {
     name: 'Bhupendra Joshi',
     role: 'President',
-    imageUrl: 'https://avatars.githubusercontent.com/u/121709397?v=4',
+    imageUrl: Bhupendra,
     linkedinUrl: 'in/bhupendra-joshi-b56092245',
     emailUrl: 'mailto:bhupendrajoshi425@gmail.com',
     githubUrl: 'https://github.com/Bhupendra143',
@@ -25,7 +35,7 @@ const members = [
   {
     name: 'Sunil Joshi',
     role: 'Sr. Vice-President',
-    imageUrl: Men,
+    imageUrl: Sunil,
     linkedinUrl: 'https://www.linkedin.com/in/dipak-raj-giri-970069234/',
     emailUrl: 'mailto:giridipak743@gmail.com',
     githubUrl: 'https://github.com/Dipakrajgiri',
@@ -49,7 +59,7 @@ const members = [
   {
     name: 'Apekshya Bogati',
     role: 'Secretary',
-    imageUrl: Women,
+    imageUrl: Apekshya,
     linkedinUrl: 'https://www.linkedin.com/in/jelinabhatt/  ',
     emailUrl: 'mailto:jelinabhatt1@gmail.com',
     githubUrl: 'https://github.com/Jelina-bhatt',
@@ -57,7 +67,7 @@ const members = [
     {
     name: 'Prashant Saud',
     role: 'Treasurer',
-    imageUrl: Men,
+    imageUrl: Prashant,
     linkedinUrl: 'https://www.linkedin.com/in/ujjalmahata02/',
     emailUrl: 'mailto:ujjalmahata439@gmail.com',
     githubUrl: 'https://github.com/ujjalmahata02',
@@ -65,7 +75,7 @@ const members = [
   {
     name: 'Aashutosh Kalauni',
     role: 'Tech Lead',
-    imageUrl: '',
+    imageUrl: Aashutosh,
     linkedinUrl: 'https://www.linkedin.com/in/asishmehata48/',
     emailUrl: 'mailto:asishmehata48@gmail.com',
     githubUrl: 'https://github.com/asishmehata48',
@@ -98,7 +108,7 @@ const members = [
   {
     name: 'Govind Raj Pandey',
     role: 'PR Lead',
-    imageUrl: Men,
+    imageUrl: Govind,
     linkedinUrl: 'https://linkedin.com/feed',
     emailUrl: 'mailto:adarshjoshi@example.com',
     githubUrl: 'https://github.com/',
@@ -114,7 +124,7 @@ const members = [
   {
     name: 'Bishal Mahar',
     role: 'Event Organiger',
-    imageUrl: Men,
+    imageUrl: Bishal,
     linkedinUrl: 'https://www.linkedin.com/in/dipa-joshi-548a79233/',
     emailUrl: 'mailto:joshideepa988@gmail.com',
     githubUrl: 'https://github.com/Dipajoshi'
@@ -122,7 +132,7 @@ const members = [
   {
     name: 'Mohit Bhatt',
     role: 'Event Organiger',
-    imageUrl: Men,
+    imageUrl: Mohit,
     linkedinUrl: 'https://www.linkedin.com/feed',
     emailUrl: 'mailto:vandanashahi@example.com',
     githubUrl: 'https://github.com/',
@@ -130,7 +140,7 @@ const members = [
   {
     name: 'Sambidha Airee',
     role: 'Event Organizer',
-    imageUrl: Women,
+    imageUrl: Sambidha,
     linkedinUrl: 'http://www.linkedin.com/in/pradeep-nath-437375316',
     emailUrl: 'mailto:pradeepnath595@gmail.com',
     githubUrl: 'https://github.com/PradeepNath01',
@@ -138,7 +148,7 @@ const members = [
   {
     name: 'Bhawana Karki',
     role: 'Executive Member',
-    imageUrl: '',
+    imageUrl: Bhawana,
     linkedinUrl: 'https://www.linkedin.com/in/yogesh-awasthi/',
     emailUrl: 'mailto:yogesh@example.com',
     githubUrl: 'https://github.com/yogeshawasthi',
@@ -146,7 +156,7 @@ const members = [
   {
     name: 'Ram Datt Bhatt',
     role: 'Executive Member',
-    imageUrl: Men,
+    imageUrl: Ram,
     linkedinUrl: 'https://www.linkedin.com/in/hemant-lekhak-76953b320',
     emailUrl: 'mailto:lekhakhemant1@gmail.com',
     githubUrl: 'https://github.com/Hemant-lekhak1',
@@ -154,7 +164,7 @@ const members = [
   {
     name: 'Jelina Bhatt',
     role: 'Executive Member',
-    imageUrl: Jelina,
+    imageUrl: Jelu,
     linkedinUrl: 'https://www.linkedin.com/in/jelina-bhatt-2384472b4/',
     emailUrl: 'mailto:jelinabhatt1@gmail.com',
     githubUrl: 'https://github.com/Jelina-bhatt',
@@ -162,7 +172,7 @@ const members = [
   {
     name: 'Ujjal Singh Mahata',
     role: 'Executive Member',
-    imageUrl: 'https://avatars.githubusercontent.com/u/176055017?v=4',
+    imageUrl: Ujjal,
     linkedinUrl: 'https://www.linkedin.com/ujjalmahata02',
     emailUrl: 'mailto:ujjalmahata439@gmail.com',
     githubUrl: 'https://github.com/ujjalmahata02',
@@ -178,7 +188,7 @@ const members = [
     {
     name: 'Brijala Pandey',
     role: 'Executive Member',
-    imageUrl: Women,
+    imageUrl: Brijala,
     linkedinUrl: 'https://github.com/',
     emailUrl: 'mailto:santoshluhar@example.com',
     githubUrl: 'https://github.com/brijalaa',
