@@ -1,7 +1,7 @@
 import Footer from './Footer';
-import Babita from "../assets/babita.jpg"
-import KamalRaj from "../assets/kamal.jpeg"
+import Bhupendra from "../assets/bhupendra.png"
 import Asish from "../assets/asish.jpg"
+import Jelina from "../assets/jelina.jpeg"
 
 const Contact = () => {
   return (
@@ -18,25 +18,25 @@ const Contact = () => {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                 <div className="col-span-1">
-                  <img src={Babita} alt="Pradip Bhatt" className="mx-auto rounded-full w-32 h-32 object-cover mb-4" />
-                  <h6 className="text-lg font-semibold">Babita Bhatt</h6>
+                  <img src={Bhupendra} alt="Pradip Bhatt" className="mx-auto rounded-full w-32 h-32 object-cover mb-4" />
+                  <h6 className="text-lg font-semibold">Bhupendra Joshi</h6>
                   <p className="text-base">Club President</p>
-                  <p className="text-base">9810652734</p>
-                  <p className="text-base text-gray-600">babitabhatt@gmail.com</p>
+                  <p className="text-base">9862466586</p>
+                  <p className="text-base text-gray-600">bhupendrajoshi425@gmail.com</p>
                 </div>
                 <div className="col-span-1">
-                  <img src={KamalRaj} alt="Dipak Raj Giri" className="mx-auto rounded-full w-32 h-32 object-cover mb-4" />
-                  <h6 className="text-lg font-semibold">Kamal Raj Giri</h6>
-                  <p className="text-base">General Secretary</p>
-                  <p className="text-base">9864311321</p>
-                  <p className="text-base text-gray-600">giridipak743@gmail.com</p>
-                </div>
-                <div className="col-span-1">
-                  <img src={Asish} alt="Bipesh Khadka" className="mx-auto rounded-full w-32 h-32 object-cover mb-4" />
+                  <img src={Asish} alt="Dipak Raj Giri" className="mx-auto rounded-full w-32 h-32 object-cover mb-4" />
                   <h6 className="text-lg font-semibold">Asish Mehata</h6>
-                  <p className="text-base">Tech Lead</p>
+                  <p className="text-base">General Secretary</p>
                   <p className="text-base">9868723582</p>
                   <p className="text-base text-gray-600">asishmehata48@gmail.com</p>
+                </div>
+                <div className="col-span-1">
+                  <img src={Jelina} alt="Bipesh Khadka" className="mx-auto rounded-full w-32 h-32 object-cover mb-4" />
+                  <h6 className="text-lg font-semibold">Jelina Bhatt</h6>
+                  <p className="text-base">Executive Member</p>
+                  <p className="text-base">9766419525</p>
+                  <p className="text-base text-gray-600">jelinabhatt1@gmail.com</p>
                 </div>
               </div>
             </div>
